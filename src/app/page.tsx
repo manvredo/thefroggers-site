@@ -64,7 +64,7 @@ export default function VideoLanding() {
             width: '100%',
             height: '100%',
             overflow: 'hidden',
-            borderRadius: '10px' // Abgerundete Ecken auch für den Container
+            borderRadius: '20px' // Abgerundete Ecken auch für den Container (ca. 2cm)
           }}>
             <video
               style={{
@@ -79,7 +79,7 @@ export default function VideoLanding() {
                 boxShadow: 'none',
                 border: 'none',
                 filter: 'brightness(0.85) contrast(1.1)', // Leicht gedämpft für besseren Kontrast mit Text
-                borderRadius: '10px' // Abgerundete Ecken (ca. 1cm)
+                borderRadius: '20px' // Abgerundete Ecken (ca. 2cm)
               }}
               autoPlay
               muted
@@ -99,20 +99,21 @@ export default function VideoLanding() {
               bottom: 0,
               background: 'rgba(0, 10, 30, 0.2)', // Leicht bläuliches Overlay für besseren Kontrast
               pointerEvents: 'none', // Damit das Overlay keine Klicks abfängt
-              borderRadius: '10px' // Abgerundete Ecken (ca. 1cm) - identisch zum Video
+              borderRadius: '20px' // Abgerundete Ecken (ca. 2cm) - identisch zum Video
             }} />
           </div>
         </div>
 
-        {/* Content over Video - neu positioniert (5cm höher, 8cm nach links) */}
+        {/* Content over Video - zentriert */}
         <div style={{
           position: 'relative',
           zIndex: 2,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '120px', // 50px höher (vorher 170px)
-          marginLeft: '-80px' // 8cm nach links verschoben
+          marginTop: '120px', // 50px höher als vorher
+          marginLeft: 'auto', // Zentriert
+          marginRight: 'auto' // Zentriert
         }}>
           
           {/* Logo/Title */}
