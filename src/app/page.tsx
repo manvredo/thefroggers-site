@@ -1,3 +1,4 @@
+
 'use client';
 
 // Video Landing Page - Root (/) 
@@ -36,8 +37,8 @@ export default function VideoLanding() {
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)'
+        justifyContent: 'center'
+        /* Blauer Hintergrund-Gradient entfernt */
       }}>
         
         {/* Video Container mit korrektem Seitenverhältnis für 1440x810px */}
@@ -76,14 +77,14 @@ export default function VideoLanding() {
           </video>
         </div>
 
-        {/* Dark Overlay */}
+        {/* Dark Overlay - leichter und transparenter */}
         <div style={{
           position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'rgba(0, 0, 0, 0.5)', // Leicht dunkler für besseren Kontrast
+          background: 'rgba(0, 0, 0, 0.2)', // Viel transparenter als vorher
           zIndex: 2
         }} />
 
