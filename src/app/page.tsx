@@ -131,12 +131,14 @@ export default function VideoLanding() {
                 minWidth: '280px'
               }}
               onMouseOver={(e) => {
-                e.target.style.transform = 'translateY(-3px)';
-                e.target.style.boxShadow = '0 12px 35px rgba(0, 212, 255, 0.6)';
+                const target = e.target as HTMLButtonElement;
+                target.style.transform = 'translateY(-3px)';
+                target.style.boxShadow = '0 12px 35px rgba(0, 212, 255, 0.6)';
               }}
               onMouseOut={(e) => {
-                e.target.style.transform = 'translateY(0px)';
-                e.target.style.boxShadow = '0 8px 25px rgba(0, 212, 255, 0.4)';
+                const target = e.target as HTMLButtonElement;
+                target.style.transform = 'translateY(0px)';
+                target.style.boxShadow = '0 8px 25px rgba(0, 212, 255, 0.4)';
               }}
             >
               🐸 Enter Frogger World
@@ -159,14 +161,16 @@ export default function VideoLanding() {
                 minWidth: '280px'
               }}
               onMouseOver={(e) => {
-                e.target.style.background = 'rgba(255, 255, 255, 0.25)';
-                e.target.style.transform = 'translateY(-3px)';
-                e.target.style.boxShadow = '0 8px 25px rgba(255, 255, 255, 0.2)';
+                const target = e.target as HTMLButtonElement;
+                target.style.background = 'rgba(255, 255, 255, 0.25)';
+                target.style.transform = 'translateY(-3px)';
+                target.style.boxShadow = '0 8px 25px rgba(255, 255, 255, 0.2)';
               }}
               onMouseOut={(e) => {
-                e.target.style.background = 'rgba(255, 255, 255, 0.15)';
-                e.target.style.transform = 'translateY(0px)';
-                e.target.style.boxShadow = 'none';
+                const target = e.target as HTMLButtonElement;
+                target.style.background = 'rgba(255, 255, 255, 0.15)';
+                target.style.transform = 'translateY(0px)';
+                target.style.boxShadow = 'none';
               }}
             >
               ⚡ Mint Your NFT
@@ -193,12 +197,14 @@ export default function VideoLanding() {
                 minWidth: '200px'
               }}
               onMouseOver={(e) => {
-                e.target.style.color = 'white';
-                e.target.style.borderColor = 'rgba(255, 255, 255, 0.6)';
+                const target = e.target as HTMLButtonElement;
+                target.style.color = 'white';
+                target.style.borderColor = 'rgba(255, 255, 255, 0.6)';
               }}
               onMouseOut={(e) => {
-                e.target.style.color = 'rgba(255, 255, 255, 0.8)';
-                e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+                const target = e.target as HTMLButtonElement;
+                target.style.color = 'rgba(255, 255, 255, 0.8)';
+                target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
               }}
             >
               ▶️ Watch Full Video
@@ -228,12 +234,14 @@ export default function VideoLanding() {
               backdropFilter: 'blur(5px)'
             }}
             onMouseOver={(e) => {
-              e.target.style.color = 'white';
-              e.target.style.background = 'rgba(255, 255, 255, 0.1)';
+              const target = e.target as HTMLButtonElement;
+              target.style.color = 'white';
+              target.style.background = 'rgba(255, 255, 255, 0.1)';
             }}
             onMouseOut={(e) => {
-              e.target.style.color = 'rgba(255, 255, 255, 0.6)';
-              e.target.style.background = 'transparent';
+              const target = e.target as HTMLButtonElement;
+              target.style.color = 'rgba(255, 255, 255, 0.6)';
+              target.style.background = 'transparent';
             }}
           >
             Skip Intro →
