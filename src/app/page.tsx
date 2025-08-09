@@ -46,7 +46,7 @@ export default function VideoLanding() {
         {/* Video Container mit korrektem Seitenverhältnis für 1440x810px - ohne Hintergrund/Rahmeneffekte */}
         <div style={{
           position: 'absolute',
-          top: 'calc(50% - 60px)',
+          top: 'calc(50% - 110px)', // 110px (ca. 11cm) nach oben verschoben - vorher 60px, jetzt zusätzlich 50px höher
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: 'min(100%, 1440px)',
@@ -88,7 +88,7 @@ export default function VideoLanding() {
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '120px'
+          marginTop: '170px' // Erhöht um 50px, um den Abstand zum höher gesetzten Video zu vergrößern
         }}>
           
           {/* Logo/Title */}
