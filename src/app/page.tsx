@@ -40,14 +40,15 @@ export default function VideoLanding() {
         background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)'
       }}>
         
-        {/* Video Container mit korrektem Seitenverhältnis */}
+        {/* Video Container mit korrektem Seitenverhältnis für 1440x810px */}
         <div style={{
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: '100%',
-          height: '100%',
+          width: 'min(100%, 1440px)', // Maximale Breite begrenzen auf Originalgröße
+          height: 'auto',
+          aspectRatio: '1440/810', // Exaktes Seitenverhältnis des Videos
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -60,7 +61,9 @@ export default function VideoLanding() {
               width: 'auto',
               height: 'auto',
               objectFit: 'contain', // Beibehaltung des Seitenverhältnisses
-              zIndex: 1
+              zIndex: 1,
+              // Setze optimale Größe für 1440x810px Video
+              aspectRatio: '1440/810'
             }}
             autoPlay
             muted
