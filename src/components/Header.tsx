@@ -62,13 +62,13 @@ export const Header = () => {
       >
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
           {/* theFroggers Logo */}
-          <div style={{ marginRight: '3cm' }}>
+          <div style={{ marginRight: '8cm' }}>
             <img 
               src="/images/logo.png" 
               alt="theFroggers" 
               style={{
-                width: '356px',
-                height: '108px',
+                width: '178px',
+                height: '54px',
                 cursor: 'pointer',
                 objectFit: 'contain'
               }}
