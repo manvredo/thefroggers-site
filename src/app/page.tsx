@@ -18,7 +18,7 @@ export default function VideoLanding() {
   };
 
   return (
-    <div style={{ margin: 0, padding: 0 }}>
+    <>
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -28,17 +28,18 @@ export default function VideoLanding() {
         image={`/api/og/generate?title=${encodeURIComponent("theFroggers NFT")}`}
       />
 
-      {/* Video Landing Page ohne Rahmen und Overflow */}
+      {/* Video Landing Page - ohne Rahmen */}
       <div style={{
         position: 'relative',
-        width: '100%', // Geändert von 100vw
+        width: '100%',
         height: '100vh',
-        overflow: 'visible', // Geändert von hidden
+        overflow: 'visible',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         margin: 0,
-        padding: 0
+        padding: 0,
+        boxSizing: 'border-box'
       }}>
         
         {/* Video Container mit korrektem Seitenverhältnis für 1440x810px */}
