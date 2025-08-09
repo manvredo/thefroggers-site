@@ -46,7 +46,7 @@ export default function VideoLanding() {
         {/* Video Container mit korrektem Seitenverhältnis für 1440x810px - ohne Hintergrund/Rahmeneffekte */}
         <div style={{
           position: 'absolute',
-          top: 'calc(50% - 110px)', // 110px (ca. 11cm) nach oben verschoben - vorher 60px, jetzt zusätzlich 50px höher
+          top: 'calc(50% - 110px)',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: 'min(100%, 1440px)',
@@ -56,29 +56,49 @@ export default function VideoLanding() {
           alignItems: 'center',
           justifyContent: 'center',
           zIndex: 1,
-          backgroundColor: 'transparent' // Explizit transparent
+          backgroundColor: 'transparent'
         }}>
-          <video
-            style={{
-              maxWidth: '100%',
-              maxHeight: '100%',
-              width: 'auto',
-              height: 'auto',
-              objectFit: 'contain',
-              zIndex: 1,
-              aspectRatio: '1440/810',
-              backgroundColor: 'transparent',
-              boxShadow: 'none',
-              border: 'none'
-            }}
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
-            <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
-          </video>
+          {/* Video-Element mit internem Filter */}
+          <div style={{
+            position: 'relative',
+            width: '100%',
+            height: '100%',
+            overflow: 'hidden'
+          }}>
+            <video
+              style={{
+                maxWidth: '100%',
+                maxHeight: '100%',
+                width: 'auto',
+                height: 'auto',
+                objectFit: 'contain',
+                zIndex: 1,
+                aspectRatio: '1440/810',
+                backgroundColor: 'transparent',
+                boxShadow: 'none',
+                border: 'none',
+                filter: 'brightness(0.85) contrast(1.1)' // Leicht gedämpft für besseren Kontrast mit Text
+              }}
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
+              <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
+            </video>
+            
+            {/* Transparentes Overlay exakt in der Größe des Videos */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0, 10, 30, 0.2)', // Leicht bläuliches Overlay für besseren Kontrast
+              pointerEvents: 'none' // Damit das Overlay keine Klicks abfängt
+            }} />
+          </div>
         </div>
 
         {/* Content over Video - mit angepasstem z-index und direkt über dem Video */}
