@@ -1,89 +1,246 @@
-import React from "react";
+'use client';
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema } from "@once-ui-system/core";
-import { home, about, person, newsletter, baseURL, routes } from "@/resources";
-import { Mailchimp } from "@/components";
-import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts";
+// Video Landing Page - Root (/) 
+import { Schema } from "@once-ui-system/core";
+import { baseURL } from "@/resources";
 
-export default function Home() {
+export default function VideoLanding() {
+  const scrollToHome = () => {
+    window.location.href = '/home';
+  };
+
+  const scrollToMinting = () => {
+    window.location.href = '/work'; // Mint page
+  };
+
+  const openYouTube = () => {
+    window.open('https://youtube.com/watch?v=YOUR_VIDEO_ID', '_blank');
+  };
+
   return (
-    <Column maxWidth="m" gap="xl" horizontal="center">
+    <>
       <Schema
         as="webPage"
         baseURL={baseURL}
-        path={home.path}
-        title={home.title}
-        description={home.description}
-        image={`/api/og/generate?title=${encodeURIComponent(home.title)}`}
-        author={{
-          name: person.name,
-          url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
-        }}
+        path="/"
+        title="theFroggers - Enter the Frogger World"
+        description="Welcome to theFroggers - Unique NFT Collection. Enter the digital frog universe."
+        image={`/api/og/generate?title=${encodeURIComponent("theFroggers NFT")}`}
       />
-      <Column fillWidth paddingY="24" gap="m">
-        <Column maxWidth="s">
-          {home.featured.display && (
-          <RevealFx fillWidth horizontal="start" paddingTop="16" paddingBottom="32" paddingLeft="12">
-            <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
-              href={home.featured.href}>
-              <Row paddingY="2">{home.featured.title}</Row>
-            </Badge>
-          </RevealFx>
-          )}
-          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="16">
-            <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
-            </Heading>
-          </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
-              {home.subline}
-            </Text>
-          </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="start" paddingLeft="12">
-            <Button
-              id="about"
-              data-border="rounded"
-              href={about.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
+
+      {/* Video Landing Page - Fullscreen */}
+      <div style={{
+        position: 'relative',
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)'
+      }}>
+        
+        {/* Video Background */}
+        <video
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: -2
+          }}
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/frogger-intro.mp4" type="video/mp4" />
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Dark Overlay */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'rgba(0, 0, 0, 0.4)',
+          zIndex: -1
+        }} />
+
+        {/* Content over Video */}
+        <div style={{
+          position: 'relative',
+          zIndex: 1,
+          textAlign: 'center',
+          padding: '2rem',
+          maxWidth: '600px'
+        }}>
+          
+          {/* Logo/Title */}
+          <h1 style={{
+            fontSize: '4rem',
+            fontWeight: 900,
+            margin: '0 0 2rem 0',
+            background: 'linear-gradient(45deg, #00d4ff, #ff00ff, #ffff00)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            textShadow: '0 0 30px rgba(0, 212, 255, 0.5)'
+          }}>
+            theFroggers
+          </h1>
+
+          {/* Subtitle */}
+          <p style={{
+            fontSize: '1.5rem',
+            color: 'rgba(255, 255, 255, 0.9)',
+            marginBottom: '3rem',
+            textShadow: '0 2px 10px rgba(0, 0, 0, 0.7)'
+          }}>
+            Enter the Digital Frog Universe
+          </p>
+          
+          {/* Action Buttons */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem',
+            alignItems: 'center'
+          }}>
+            
+            {/* Enter Frogger World Button */}
+            <button
+              onClick={scrollToHome}
+              style={{
+                background: 'linear-gradient(45deg, #00d4ff, #ff00ff)',
+                color: 'white',
+                border: 'none',
+                padding: '18px 40px',
+                borderRadius: '30px',
+                fontSize: '1.2rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 8px 25px rgba(0, 212, 255, 0.4)',
+                backdropFilter: 'blur(10px)',
+                minWidth: '280px'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.transform = 'translateY(-3px)';
+                e.target.style.boxShadow = '0 12px 35px rgba(0, 212, 255, 0.6)';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.transform = 'translateY(0px)';
+                e.target.style.boxShadow = '0 8px 25px rgba(0, 212, 255, 0.4)';
+              }}
             >
-              <Flex gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )}
-                {about.title}
-              </Flex>
-            </Button>
-          </RevealFx>
-        </Column>
-      </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
-      {routes["/blog"] && (
-        <Flex fillWidth gap="24" mobileDirection="column">
-          <Flex flex={1} paddingLeft="l" paddingTop="24">
-            <Heading as="h2" variant="display-strong-xs" wrap="balance">
-              Latest from the blog
-            </Heading>
-          </Flex>
-          <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
-          </Flex>
-        </Flex>
-      )}
-      <Projects range={[2]} />
-      {newsletter.display && <Mailchimp newsletter={newsletter} />}
-    </Column>
+              🐸 Enter Frogger World
+            </button>
+
+            {/* Mint NFT Button */}
+            <button
+              onClick={scrollToMinting}
+              style={{
+                background: 'rgba(255, 255, 255, 0.15)',
+                color: 'white',
+                border: '2px solid rgba(255, 255, 255, 0.3)',
+                padding: '18px 40px',
+                borderRadius: '30px',
+                fontSize: '1.2rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                backdropFilter: 'blur(10px)',
+                minWidth: '280px'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.background = 'rgba(255, 255, 255, 0.25)';
+                e.target.style.transform = 'translateY(-3px)';
+                e.target.style.boxShadow = '0 8px 25px rgba(255, 255, 255, 0.2)';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.background = 'rgba(255, 255, 255, 0.15)';
+                e.target.style.transform = 'translateY(0px)';
+                e.target.style.boxShadow = 'none';
+              }}
+            >
+              ⚡ Mint Your NFT
+            </button>
+
+            {/* Watch Full Video Button */}
+            <button
+              onClick={openYouTube}
+              style={{
+                background: 'transparent',
+                color: 'rgba(255, 255, 255, 0.8)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                padding: '12px 30px',
+                borderRadius: '25px',
+                fontSize: '1rem',
+                fontWeight: 500,
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                backdropFilter: 'blur(5px)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                justifyContent: 'center',
+                minWidth: '200px'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.color = 'white';
+                e.target.style.borderColor = 'rgba(255, 255, 255, 0.6)';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = 'rgba(255, 255, 255, 0.8)';
+                e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+              }}
+            >
+              ▶️ Watch Full Video
+            </button>
+
+          </div>
+        </div>
+
+        {/* Skip to Main Site Link */}
+        <div style={{
+          position: 'absolute',
+          bottom: '2rem',
+          right: '2rem',
+          zIndex: 2
+        }}>
+          <button
+            onClick={scrollToHome}
+            style={{
+              background: 'transparent',
+              color: 'rgba(255, 255, 255, 0.6)',
+              border: 'none',
+              padding: '8px 16px',
+              borderRadius: '20px',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              backdropFilter: 'blur(5px)'
+            }}
+            onMouseOver={(e) => {
+              e.target.style.color = 'white';
+              e.target.style.background = 'rgba(255, 255, 255, 0.1)';
+            }}
+            onMouseOut={(e) => {
+              e.target.style.color = 'rgba(255, 255, 255, 0.6)';
+              e.target.style.background = 'transparent';
+            }}
+          >
+            Skip Intro →
+          </button>
+        </div>
+
+      </div>
+    </>
   );
 }
