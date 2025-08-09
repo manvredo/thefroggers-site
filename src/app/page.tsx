@@ -104,21 +104,21 @@ export default function VideoLanding() {
           </div>
         </div>
 
-        {/* Content over Video - links von der Mitte und höher positioniert */}
+        {/* Content over Video - weiter links positioniert */}
         <div style={{
           position: 'relative',
           zIndex: 2,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '60px', // 6cm höher als vorher (60px höher als 120px)
-          marginLeft: 'calc(50% - 150px)', // Leicht links von der Mitte (nicht ganz links)
+          marginTop: '60px', // 6cm höher als vorher
+          marginLeft: 'calc(50% - 250px)', // Weiter links als vorher (um ca. 2cm)
           transform: 'translateX(-50%)' // Ausgleich für die Ausrichtung
         }}>
           
-          {/* Logo/Title */}
+          {/* Logo/Title - doppelt so groß */}
           <h1 style={{
-            fontSize: 'clamp(2.5rem, 8vw, 4rem)', // Responsive Schriftgröße
+            fontSize: 'clamp(5rem, 16vw, 8rem)', // Verdoppelte Schriftgröße (vorher: 2.5rem, 8vw, 4rem)
             fontWeight: 900,
             margin: '0 0 2rem 0',
             background: 'linear-gradient(45deg, #00d4ff, #ff00ff, #ffff00)',
@@ -130,9 +130,15 @@ export default function VideoLanding() {
             theFroggers
           </h1>
 
-          {/* Subtitle */}
+          {/* Subtitle - doppelt so groß */}
           <p style={{
-            fontSize: 'clamp(1rem, 4vw, 1.5rem)', // Responsive Schriftgröße
+            fontSize: 'clamp(2rem, 8vw, 3rem)', // Verdoppelte Schriftgröße (vorher: 1rem, 4vw, 1.5rem)
+            color: 'rgba(255, 255, 255, 0.9)',
+            marginBottom: '3rem',
+            textShadow: '0 2px 10px rgba(0, 0, 0, 0.7)'
+          }}>
+            Leap into the craziest pond in Web3
+          </p>größe
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '3rem',
             textShadow: '0 2px 10px rgba(0, 0, 0, 0.7)'
