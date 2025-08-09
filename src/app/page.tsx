@@ -1,4 +1,15 @@
-'use client';
+export default function VideoLanding() {
+  const scrollToHome = () => {
+    window.location.href = '/home';
+  };
+
+  const scrollToMinting = () => {
+    window.location.href = '/work'; // Mint page
+  };
+
+  const openYouTube = () => {
+    window.open('https://youtube.com/watch?v=YOUR_VIDEO_ID', '_blank');
+  };'use client';
 
 // Video Landing Page - Root (/) 
 import { Schema } from "@once-ui-system/core";
@@ -28,7 +39,7 @@ export default function VideoLanding() {
         image={`/api/og/generate?title=${encodeURIComponent("theFroggers NFT")}`}
       />
 
-      {/* Video Landing Page - ohne Rahmen */}
+      {/* Video Landing Page - ohne Verdunkelung oder Rahmen */}
       <div style={{
         position: 'relative',
         width: '100%',
@@ -39,22 +50,24 @@ export default function VideoLanding() {
         justifyContent: 'center',
         margin: 0,
         padding: 0,
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        backgroundColor: 'transparent'
       }}>
         
-        {/* Video Container mit korrektem Seitenverhältnis für 1440x810px */}
+        {/* Video Container mit korrektem Seitenverhältnis für 1440x810px - ohne Hintergrund/Rahmeneffekte */}
         <div style={{
           position: 'absolute',
-          top: 'calc(50% - 60px)', // 60px (ca. 6cm) nach oben verschoben
+          top: 'calc(50% - 60px)',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 'min(100%, 1440px)', // Maximale Breite begrenzen auf Originalgröße
+          width: 'min(100%, 1440px)',
           height: 'auto',
-          aspectRatio: '1440/810', // Exaktes Seitenverhältnis des Videos
+          aspectRatio: '1440/810',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          zIndex: 1
+          zIndex: 1,
+          backgroundColor: 'transparent' // Explizit transparent
         }}>
           <video
             style={{
@@ -62,41 +75,34 @@ export default function VideoLanding() {
               maxHeight: '100%',
               width: 'auto',
               height: 'auto',
-              objectFit: 'contain', // Beibehaltung des Seitenverhältnisses
+              objectFit: 'contain',
               zIndex: 1,
-              // Setze optimale Größe für 1440x810px Video
-              aspectRatio: '1440/810'
+              aspectRatio: '1440/810',
+              backgroundColor: 'transparent',
+              boxShadow: 'none',
+              border: 'none'
             }}
             autoPlay
             muted
             loop
             playsInline
-            controls
           >
             <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
             <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
           </video>
         </div>
 
-        {/* Dark Overlay - leichter und transparenter */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          background: 'rgba(0, 0, 0, 0.2)', // Viel transparenter als vorher
-          zIndex: 2
-        }} />
+        {/* Dark Overlay komplett entfernt */}
+        {/* Der dunkle Overlay wurde vollständig entfernt */}
 
-        {/* Content over Video */}
+        {/* Content over Video - mit angepasstem z-index und direkt über dem Video */}
         <div style={{
           position: 'relative',
-          zIndex: 3,
+          zIndex: 2, // Reduziert, da wir kein Overlay mehr haben
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '120px' // Verschiebt den Content nach unten, um Raum für das höher positionierte Video zu schaffen
+          marginTop: '120px'
         }}>
           
           {/* Logo/Title */}
