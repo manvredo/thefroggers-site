@@ -104,16 +104,16 @@ export default function VideoLanding() {
           </div>
         </div>
 
-        {/* Content over Video - zentriert */}
+        {/* Content over Video - links von der Mitte und höher positioniert */}
         <div style={{
           position: 'relative',
           zIndex: 2,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '120px', // 50px höher als vorher
-          marginLeft: 'auto', // Zentriert
-          marginRight: 'auto' // Zentriert
+          marginTop: '60px', // 6cm höher als vorher (60px höher als 120px)
+          marginLeft: 'calc(50% - 150px)', // Leicht links von der Mitte (nicht ganz links)
+          transform: 'translateX(-50%)' // Ausgleich für die Ausrichtung
         }}>
           
           {/* Logo/Title */}
