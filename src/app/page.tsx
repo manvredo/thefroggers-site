@@ -56,8 +56,8 @@ export default function VideoLanding() {
           loop
           playsInline
         >
-          <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
           <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+          <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
