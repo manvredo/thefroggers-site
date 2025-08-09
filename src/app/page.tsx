@@ -102,7 +102,7 @@ export default function VideoLanding() {
             marginBottom: '3rem',
             textShadow: '0 2px 10px rgba(0, 0, 0, 0.7)'
           }}>
-            Enter the Digital Frog Universe
+            Leap into the craziest pond in Web3
           </p>
           
           {/* Action Buttons */}
@@ -173,7 +173,7 @@ export default function VideoLanding() {
                 target.style.boxShadow = 'none';
               }}
             >
-              ⚡ Mint Your NFT
+              ⚡ Mint Your Frogger
             </button>
 
             {/* Watch Full Video Button */}
