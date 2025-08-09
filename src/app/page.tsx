@@ -18,7 +18,7 @@ export default function VideoLanding() {
   };
 
   return (
-    <>
+    <div className="video-landing-container">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -293,6 +293,6 @@ export default function VideoLanding() {
         </div>
 
       </div>
-    </>
+    </div>
   );
 }
