@@ -40,26 +40,38 @@ export default function VideoLanding() {
         background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)'
       }}>
         
-        {/* Video Background - Debug Version */}
-        <video
-          style={{
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            width: '100vw',
-            height: '100vh',
-            objectFit: 'cover',
-            zIndex: 1
-          }}
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-        >
-         <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
-          <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
-        </video>
+        {/* Video Container mit korrektem Seitenverhältnis */}
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1
+        }}>
+          <video
+            style={{
+              maxWidth: '100%',
+              maxHeight: '100%',
+              width: 'auto',
+              height: 'auto',
+              objectFit: 'contain', // Beibehaltung des Seitenverhältnisses
+              zIndex: 1
+            }}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+          >
+            <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
+            <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
+          </video>
+        </div>
 
         {/* Dark Overlay */}
         <div style={{
@@ -68,7 +80,7 @@ export default function VideoLanding() {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'rgba(0, 0, 0, 0.4)',
+          background: 'rgba(0, 0, 0, 0.5)', // Leicht dunkler für besseren Kontrast
           zIndex: 2
         }} />
 
@@ -83,7 +95,7 @@ export default function VideoLanding() {
           
           {/* Logo/Title */}
           <h1 style={{
-            fontSize: '4rem',
+            fontSize: 'clamp(2.5rem, 8vw, 4rem)', // Responsive Schriftgröße
             fontWeight: 900,
             margin: '0 0 2rem 0',
             background: 'linear-gradient(45deg, #00d4ff, #ff00ff, #ffff00)',
@@ -97,7 +109,7 @@ export default function VideoLanding() {
 
           {/* Subtitle */}
           <p style={{
-            fontSize: '1.5rem',
+            fontSize: 'clamp(1rem, 4vw, 1.5rem)', // Responsive Schriftgröße
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '3rem',
             textShadow: '0 2px 10px rgba(0, 0, 0, 0.7)'
@@ -122,13 +134,14 @@ export default function VideoLanding() {
                 border: 'none',
                 padding: '18px 40px',
                 borderRadius: '30px',
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 3vw, 1.2rem)', // Responsive Schriftgröße
                 fontWeight: 600,
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 boxShadow: '0 8px 25px rgba(0, 212, 255, 0.4)',
                 backdropFilter: 'blur(10px)',
-                minWidth: '280px'
+                minWidth: 'min(280px, 90%)', // Responsive Breite
+                maxWidth: '100%'
               }}
               onMouseOver={(e) => {
                 const target = e.target as HTMLButtonElement;
@@ -153,12 +166,13 @@ export default function VideoLanding() {
                 border: '2px solid rgba(255, 255, 255, 0.3)',
                 padding: '18px 40px',
                 borderRadius: '30px',
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 3vw, 1.2rem)', // Responsive Schriftgröße
                 fontWeight: 600,
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 backdropFilter: 'blur(10px)',
-                minWidth: '280px'
+                minWidth: 'min(280px, 90%)', // Responsive Breite
+                maxWidth: '100%'
               }}
               onMouseOver={(e) => {
                 const target = e.target as HTMLButtonElement;
@@ -185,7 +199,7 @@ export default function VideoLanding() {
                 border: '1px solid rgba(255, 255, 255, 0.3)',
                 padding: '12px 30px',
                 borderRadius: '25px',
-                fontSize: '1rem',
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', // Responsive Schriftgröße
                 fontWeight: 500,
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
@@ -194,7 +208,8 @@ export default function VideoLanding() {
                 alignItems: 'center',
                 gap: '8px',
                 justifyContent: 'center',
-                minWidth: '200px'
+                minWidth: 'min(200px, 80%)', // Responsive Breite
+                maxWidth: '100%'
               }}
               onMouseOver={(e) => {
                 const target = e.target as HTMLButtonElement;
@@ -252,4 +267,3 @@ export default function VideoLanding() {
     </>
   );
 }
-
