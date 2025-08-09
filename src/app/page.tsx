@@ -63,7 +63,8 @@ export default function VideoLanding() {
             position: 'relative',
             width: '100%',
             height: '100%',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            borderRadius: '10px' // Abgerundete Ecken auch für den Container
           }}>
             <video
               style={{
@@ -77,7 +78,8 @@ export default function VideoLanding() {
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
                 border: 'none',
-                filter: 'brightness(0.85) contrast(1.1)' // Leicht gedämpft für besseren Kontrast mit Text
+                filter: 'brightness(0.85) contrast(1.1)', // Leicht gedämpft für besseren Kontrast mit Text
+                borderRadius: '10px' // Abgerundete Ecken (ca. 1cm)
               }}
               autoPlay
               muted
@@ -88,7 +90,7 @@ export default function VideoLanding() {
               <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
             </video>
             
-            {/* Transparentes Overlay exakt in der Größe des Videos */}
+            {/* Transparentes Overlay exakt in der Größe des Videos mit abgerundeten Ecken */}
             <div style={{
               position: 'absolute',
               top: 0,
@@ -96,19 +98,21 @@ export default function VideoLanding() {
               right: 0,
               bottom: 0,
               background: 'rgba(0, 10, 30, 0.2)', // Leicht bläuliches Overlay für besseren Kontrast
-              pointerEvents: 'none' // Damit das Overlay keine Klicks abfängt
+              pointerEvents: 'none', // Damit das Overlay keine Klicks abfängt
+              borderRadius: '10px' // Abgerundete Ecken (ca. 1cm) - identisch zum Video
             }} />
           </div>
         </div>
 
-        {/* Content over Video - mit angepasstem z-index und direkt über dem Video */}
+        {/* Content over Video - neu positioniert (5cm höher, 8cm nach links) */}
         <div style={{
           position: 'relative',
-          zIndex: 2, // Reduziert, da wir kein Overlay mehr haben
+          zIndex: 2,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '170px' // Erhöht um 50px, um den Abstand zum höher gesetzten Video zu vergrößern
+          marginTop: '120px', // 50px höher (vorher 170px)
+          marginLeft: '-80px' // 8cm nach links verschoben
         }}>
           
           {/* Logo/Title */}
