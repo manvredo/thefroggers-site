@@ -61,7 +61,17 @@ export const Header = () => {
         data-border="rounded"
       >
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {/* Location text removed */}
+          {/* theFroggers Logo */}
+          <img 
+            src="/images/logo.png" 
+            alt="theFroggers" 
+            style={{
+              height: '32px',
+              width: 'auto',
+              cursor: 'pointer'
+            }}
+            onClick={() => window.location.href = '/'}
+          />
         </Flex>
         <Flex fillWidth horizontal="center">
           <Flex
