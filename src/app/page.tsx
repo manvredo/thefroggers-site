@@ -1,15 +1,4 @@
-export default function VideoLanding() {
-  const scrollToHome = () => {
-    window.location.href = '/home';
-  };
-
-  const scrollToMinting = () => {
-    window.location.href = '/work'; // Mint page
-  };
-
-  const openYouTube = () => {
-    window.open('https://youtube.com/watch?v=YOUR_VIDEO_ID', '_blank');
-  };'use client';
+'use client';
 
 // Video Landing Page - Root (/) 
 import { Schema } from "@once-ui-system/core";
@@ -91,9 +80,6 @@ export default function VideoLanding() {
             <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
           </video>
         </div>
-
-        {/* Dark Overlay komplett entfernt */}
-        {/* Der dunkle Overlay wurde vollständig entfernt */}
 
         {/* Content over Video - mit angepasstem z-index und direkt über dem Video */}
         <div style={{
