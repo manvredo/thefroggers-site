@@ -40,25 +40,25 @@ export default function VideoLanding() {
         background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)'
       }}>
         
-        {/* Video Background */}
+        {/* Video Background - Debug Version */}
         <video
           style={{
             position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
+            top: '0',
+            left: '0',
+            width: '100vw',
+            height: '100vh',
             objectFit: 'cover',
-            zIndex: -2
+            zIndex: 1
           }}
           autoPlay
           muted
           loop
           playsInline
+          controls
         >
           <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-          <source src="/videos/theFroggers_Intro.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <p style={{color: 'white'}}>Your browser does not support the video tag.</p>
         </video>
 
         {/* Dark Overlay */}
@@ -69,13 +69,13 @@ export default function VideoLanding() {
           width: '100%',
           height: '100%',
           background: 'rgba(0, 0, 0, 0.4)',
-          zIndex: -1
+          zIndex: 2
         }} />
 
         {/* Content over Video */}
         <div style={{
           position: 'relative',
-          zIndex: 1,
+          zIndex: 3,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px'
