@@ -62,16 +62,19 @@ export const Header = () => {
       >
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
           {/* theFroggers Logo */}
-          <img 
-            src="/images/logo.png" 
-            alt="theFroggers" 
-            style={{
-              height: '32px',
-              width: 'auto',
-              cursor: 'pointer'
-            }}
-            onClick={() => window.location.href = '/'}
-          />
+          <div style={{ marginRight: '3cm' }}>
+            <img 
+              src="/images/logo.png" 
+              alt="theFroggers" 
+              style={{
+                width: '356px',
+                height: '108px',
+                cursor: 'pointer',
+                objectFit: 'contain'
+              }}
+              onClick={() => window.location.href = '/'}
+            />
+          </div>
         </Flex>
         <Flex fillWidth horizontal="center">
           <Flex
