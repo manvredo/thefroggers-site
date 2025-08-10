@@ -6,9 +6,10 @@ const baseURL = "https://demo.magic-portfolio.com";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/mint": true,
+  "/theFroggers": true,
+  "/community": true,
+  "/nfts": true,
 };
 
 const display = {
@@ -20,36 +21,29 @@ const display = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/mint/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
-// Import and set font for each variant
-import { Geist } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
-
-const heading = Geist({
+// Use system fonts as fallback
+const heading = {
   variable: "--font-heading",
-  subsets: ["latin"],
-  display: "swap",
-});
+  style: { fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }
+};
 
-const body = Geist({
-  variable: "--font-body",
-  subsets: ["latin"],
-  display: "swap",
-});
+const body = {
+  variable: "--font-body", 
+  style: { fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }
+};
 
-const label = Geist({
+const label = {
   variable: "--font-label",
-  subsets: ["latin"],
-  display: "swap",
-});
+  style: { fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }
+};
 
-const code = Geist_Mono({
+const code = {
   variable: "--font-code",
-  subsets: ["latin"],
-  display: "swap",
-});
+  style: { fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Monaco, Inconsolata, "Liberation Mono", "Courier New", monospace' }
+};
 
 const fonts = {
   heading: heading,

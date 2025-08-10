@@ -183,12 +183,12 @@ export default function VideoLanding() {
               maxWidth: '100%'
             },
             onMouseOver: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.transform = 'translateY(-3px)';
               target.style.boxShadow = '0 12px 35px rgba(0, 212, 255, 0.6)';
             },
             onMouseOut: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.transform = 'translateY(0px)';
               target.style.boxShadow = '0 8px 25px rgba(0, 212, 255, 0.4)';
             }
@@ -212,13 +212,13 @@ export default function VideoLanding() {
               maxWidth: '100%'
             },
             onMouseOver: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.background = 'rgba(255, 255, 255, 0.25)';
               target.style.transform = 'translateY(-3px)';
               target.style.boxShadow = '0 8px 25px rgba(255, 255, 255, 0.2)';
             },
             onMouseOut: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.background = 'rgba(255, 255, 255, 0.15)';
               target.style.transform = 'translateY(0px)';
               target.style.boxShadow = 'none';
@@ -247,12 +247,12 @@ export default function VideoLanding() {
               maxWidth: '100%'
             },
             onMouseOver: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.color = 'white';
               target.style.borderColor = 'rgba(255, 255, 255, 0.6)';
             },
             onMouseOut: (e) => {
-              const target = e.target;
+              const target = e.target as HTMLElement;
               target.style.color = 'rgba(255, 255, 255, 0.8)';
               target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
             }
@@ -283,12 +283,12 @@ export default function VideoLanding() {
             backdropFilter: 'blur(5px)'
           },
           onMouseOver: (e) => {
-            const target = e.target;
+            const target = e.target as HTMLElement;
             target.style.color = 'white';
             target.style.background = 'rgba(255, 255, 255, 0.1)';
           },
           onMouseOut: (e) => {
-            const target = e.target;
+            const target = e.target as HTMLElement;
             target.style.color = 'rgba(255, 255, 255, 0.6)';
             target.style.background = 'transparent';
           }

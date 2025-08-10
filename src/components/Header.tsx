@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, gallery } from "@/resources";
+import { routes, display, person, about, blog, work, theFroggers, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -91,71 +91,88 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
-              {routes["/about"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="person"
-                    href="/about"
-                    label={about.label}
-                    selected={pathname === "/about"}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="person"
-                    href="/about"
-                    selected={pathname === "/about"}
-                  />
-                </>
-              )}
-              {routes["/work"] && (
+{routes["/about"] && (
+  <>
+    <ToggleButton
+      className="s-flex-hide"
+      prefixIcon="person"
+      href="/about"
+      label={about.label}
+      selected={pathname === "/about"}
+    />
+    <ToggleButton
+      className="s-flex-show"
+      prefixIcon="person"
+      href="/about"
+      selected={pathname === "/about"}
+    />
+  </>
+)}
+              {routes["/mint"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="grid"
-                    href="/work"
+                    href="/mint"
                     label={work.label}
-                    selected={pathname.startsWith("/work")}
+                    selected={pathname.startsWith("/mint")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="grid"
-                    href="/work"
-                    selected={pathname.startsWith("/work")}
+                    href="/mint"
+                    selected={pathname.startsWith("/mint")}
                   />
                 </>
               )}
-              {routes["/blog"] && (
+              {routes["/theFroggers"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="grid"
+                    href="/theFroggers"
+                    label={theFroggers.label}
+                    selected={pathname.startsWith("/theFroggers")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="grid"
+                    href="/theFroggers"
+                    selected={pathname.startsWith("/theFroggers")}
+                  />
+                </>
+              )}
+              {routes["/community"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="book"
-                    href="/blog"
+                    href="/community"
                     label={blog.label}
-                    selected={pathname.startsWith("/blog")}
+                    selected={pathname.startsWith("/community")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="book"
-                    href="/blog"
-                    selected={pathname.startsWith("/blog")}
+                    href="/community"
+                    selected={pathname.startsWith("/community")}
                   />
                 </>
               )}
-              {routes["/gallery"] && (
+              {routes["/nfts"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="gallery"
-                    href="/gallery"
+                    href="/nfts"
                     label={gallery.label}
-                    selected={pathname.startsWith("/gallery")}
+                    selected={pathname.startsWith("/nfts")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="gallery"
-                    href="/gallery"
-                    selected={pathname.startsWith("/gallery")}
+                    href="/nfts"
+                    selected={pathname.startsWith("/nfts")}
                   />
                 </>
               )}

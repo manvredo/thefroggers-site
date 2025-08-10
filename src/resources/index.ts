@@ -7,6 +7,7 @@ export {
   about,
   blog,
   work,
+  theFroggers,
   gallery,
 } from "./content";
 

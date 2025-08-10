@@ -59,7 +59,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/mint/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
@@ -71,7 +71,7 @@ const home = {
 
 const about = {
   path: "/about",
-  label: "theFroggers",
+  label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -197,25 +197,34 @@ const about = {
 };
 
 const blog = {
-  path: "/blog",
+  path: "/community",
   label: "Community",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  // All posts will be listed on the /community route
 };
 
 const work = {
-  path: "/work",
+  path: "/mint",
   label: "Mint",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  // All projects will be listed on the /home and /mint routes
+};
+
+const theFroggers = {
+  path: "/theFroggers",
+  label: "theFroggers",
+  title: `theFroggers – ${person.name}`,
+  description: `theFroggers projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/theFroggers/posts
+  // All projects will be listed on the /theFroggers route
 };
 
 const gallery = {
-  path: "/gallery",
+  path: "/nfts",
   label: "NFTs",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
@@ -265,4 +274,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, theFroggers, gallery };

@@ -148,12 +148,12 @@ export default function About() {
             >
               {person.role}
             </Text>
-            {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
-                {social.map(
-                  (item) =>
-                    item.link && (
-                        <React.Fragment key={item.name}>
+{social.length > 0 && (
+  <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
+    {social.map(
+      (item) =>
+        item.link && (
+            <React.Fragment key={item.name}>
 <Button
   className="s-flex-hide"
   key={item.name}
@@ -164,19 +164,21 @@ export default function About() {
   weight="default"
   variant="secondary"
 />
-                            <IconButton
-                                className="s-flex-show"
-                                size="l"
-                                key={`${item.name}-icon`}
-                                href={item.link}
-                                icon={item.icon}
-                                variant="secondary"
-                            />
-                        </React.Fragment>
-                    ),
-                )}
-              </Flex>
-            )}
+            </React.Fragment>
+        ),
+    )}
+    <Button
+      className="s-flex-hide"
+      key="about"
+      href="/about"
+      prefixIcon="info"
+      label="About"
+      size="s"
+      weight="default"
+      variant="secondary"
+    />
+  </Flex>
+)}
           </Column>
 
           {about.intro.display && (
