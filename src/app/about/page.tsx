@@ -154,16 +154,16 @@ export default function About() {
                   (item) =>
                     item.link && (
                         <React.Fragment key={item.name}>
-                            <Button
-                                className="s-flex-hide"
-                                key={item.name}
-                                href={item.link}
-                                prefixIcon={item.icon}
-                                label={item.name}
-                                size="s"
-                                weight="default"
-                                variant="secondary"
-                            />
+<Button
+  className="s-flex-hide"
+  key={item.name}
+  href="/mint"
+  prefixIcon={item.icon}
+  label="Enter the Frog World"
+  size="s"
+  weight="default"
+  variant="secondary"
+/>
                             <IconButton
                                 className="s-flex-show"
                                 size="l"
