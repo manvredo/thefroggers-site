@@ -1,4 +1,3 @@
-
 'use client';
 
 // Video Landing Page - Root (/) 
@@ -65,7 +64,7 @@ export default function VideoLanding() {
             width: '100%',
             height: '100%',
             overflow: 'hidden',
-            borderRadius: '20px' // Abgerundete Ecken auch für den Container (ca. 2cm)
+            borderRadius: '10px' // Abgerundete Ecken auch für den Container
           }}>
             <video
               style={{
@@ -80,7 +79,7 @@ export default function VideoLanding() {
                 boxShadow: 'none',
                 border: 'none',
                 filter: 'brightness(0.85) contrast(1.1)', // Leicht gedämpft für besseren Kontrast mit Text
-                borderRadius: '20px' // Abgerundete Ecken (ca. 2cm)
+                borderRadius: '10px' // Abgerundete Ecken (ca. 1cm)
               }}
               autoPlay
               muted
@@ -100,21 +99,20 @@ export default function VideoLanding() {
               bottom: 0,
               background: 'rgba(0, 10, 30, 0.2)', // Leicht bläuliches Overlay für besseren Kontrast
               pointerEvents: 'none', // Damit das Overlay keine Klicks abfängt
-              borderRadius: '20px' // Abgerundete Ecken (ca. 2cm) - identisch zum Video
+              borderRadius: '10px' // Abgerundete Ecken (ca. 1cm) - identisch zum Video
             }} />
           </div>
         </div>
 
-        {/* Content over Video - links von der Mitte und höher positioniert */}
+        {/* Content over Video - neu positioniert (5cm höher, 8cm nach links) */}
         <div style={{
           position: 'relative',
           zIndex: 2,
           textAlign: 'center',
           padding: '2rem',
           maxWidth: '600px',
-          marginTop: '60px', // 6cm höher als vorher (60px höher als 120px)
-          marginLeft: 'calc(50% - 150px)', // Leicht links von der Mitte (nicht ganz links)
-          transform: 'translateX(-50%)' // Ausgleich für die Ausrichtung
+          marginTop: '120px', // 50px höher (vorher 170px)
+          marginLeft: '-80px' // 8cm nach links verschoben
         }}>
           
           {/* Logo/Title */}
