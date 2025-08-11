@@ -7,9 +7,9 @@ import matter from "gray-matter";
 import { CustomMDX } from "@/components/mdx";
 
 interface PostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 function getPostBySlug(slug: string) {
@@ -45,7 +45,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PostPageProps) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return {};
@@ -58,12 +59,13 @@ export async function generateMetadata({ params }: PostPageProps) {
     description: summary,
     baseURL: baseURL,
     image: `/api/og/generate?title=${encodeURIComponent(title)}`,
-    path: `${blog.path}/${params.slug}`,
+    path: `${blog.path}/${slug}`,
   });
 }
 
-export default function PostPage({ params }: PostPageProps) {
-  const post = getPostBySlug(params.slug);
+export default async function PostPage({ params }: PostPageProps) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -76,7 +78,7 @@ export default function PostPage({ params }: PostPageProps) {
       <Schema
         as="article"
         baseURL={baseURL}
-        path={`${blog.path}/${params.slug}`}
+        path={`${blog.path}/${slug}`}
         title={title}
         description={summary}
         image={`/api/og/generate?title=${encodeURIComponent(title)}`}

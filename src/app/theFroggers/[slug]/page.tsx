@@ -8,9 +8,9 @@ import matter from "gray-matter";
 import { CustomMDX } from "@/components/mdx";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 function getProjectBySlug(slug: string) {
@@ -46,7 +46,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProjectPageProps) {
-  const project = getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     return {};
@@ -60,12 +61,13 @@ export async function generateMetadata({ params }: ProjectPageProps) {
     description: summary,
     baseURL: baseURL,
     image: ogImage,
-    path: `${theFroggers.path}/${params.slug}`,
+    path: `${theFroggers.path}/${slug}`,
   });
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     notFound();
@@ -78,7 +80,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <Schema
         as="article"
         baseURL={baseURL}
-        path={`${theFroggers.path}/${params.slug}`}
+        path={`${theFroggers.path}/${slug}`}
         title={title}
         description={summary}
         image={images?.[0] || `/api/og/generate?title=${encodeURIComponent(title)}`}
