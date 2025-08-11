@@ -12,6 +12,15 @@
     position: sticky;
     height: fit-content;
     top: var(--static-space-64);
+    
+    // Make avatar 30% bigger
+    & > * {
+        transform: scale(1.3);
+    }
+}
+
+.buttonsContainer {
+    margin-top: 50px !important;
 }
 
 @media (max-width: breakpoints.$s) {

@@ -90,10 +90,6 @@ export default function About() {
             horizontal="center"
           >
             <Avatar src={person.avatar} size="xl" />
-            <Flex gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
-            </Flex>
             {person.languages.length > 0 && (
               <Flex wrap gap="8">
                 {person.languages.map((language, index) => (
@@ -128,8 +124,8 @@ export default function About() {
                 marginBottom="m"
                 vertical="center"
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <img src="/images/instagram_icon.png" alt="Instagram" style={{ width: '20px', height: '20px', marginLeft: '12px' }} />
+                <Flex paddingX="8">Instagram</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -149,7 +145,7 @@ export default function About() {
               {person.role}
             </Text>
 {social.length > 0 && (
-  <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
+  <Flex className={styles.blockAlign} style={{ marginTop: '50px' }} paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
     {social.map(
       (item) =>
         item.link && (

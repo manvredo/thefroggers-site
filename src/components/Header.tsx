@@ -47,8 +47,8 @@ export const Header = () => {
 
   return (
     <>
-      <Fade hide="s" fillWidth position="fixed" height="80" zIndex={9} />
-      <Fade show="s" fillWidth position="fixed" bottom="0" to="top" height="80" zIndex={9} />
+      <Fade hide fillWidth position="fixed" height="80" zIndex={9} />
+      <Fade fillWidth position="fixed" top="0" height="80" zIndex={9} />
       <Flex
         fitHeight
         position="unset"
@@ -57,10 +57,10 @@ export const Header = () => {
         zIndex={9}
         fillWidth
         padding="8"
-        horizontal="center"
+        style={{ justifyContent: 'center' }}
         data-border="rounded"
       >
-        <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
+        <Flex paddingLeft="12" fillWidth style={{ alignItems: 'center' }} textVariant="body-default-s">
           {/* theFroggers Logo */}
           <div style={{ marginRight: '8cm' }}>
             <img 
@@ -76,105 +76,60 @@ export const Header = () => {
             />
           </div>
         </Flex>
-        <Flex fillWidth horizontal="center">
+        <Flex fillWidth style={{ justifyContent: 'center' }}>
           <Flex
             background="page"
             border="neutral-alpha-weak"
             radius="m-4"
             shadow="l"
             padding="4"
-            horizontal="center"
+            style={{ justifyContent: 'center' }}
             zIndex={1}
           >
-            <Flex gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
+            <Flex gap="4" style={{ alignItems: 'center' }} textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
 {routes["/about"] && (
-  <>
-    <ToggleButton
-      className="s-flex-hide"
-      prefixIcon="person"
-      href="/about"
-      label={about.label}
-      selected={pathname === "/about"}
-    />
-    <ToggleButton
-      className="s-flex-show"
-      prefixIcon="person"
-      href="/about"
-      selected={pathname === "/about"}
-    />
-  </>
+  <ToggleButton
+    prefixIcon="person"
+    href="/about"
+    label={about.label}
+    selected={pathname === "/about"}
+  />
 )}
               {routes["/mint"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/mint"
-                    label={work.label}
-                    selected={pathname.startsWith("/mint")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="grid"
-                    href="/mint"
-                    selected={pathname.startsWith("/mint")}
-                  />
-                </>
+                <ToggleButton
+                  prefixIcon="grid"
+                  href="/mint"
+                  label={work.label}
+                  selected={pathname.startsWith("/mint")}
+                />
               )}
               {routes["/theFroggers"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/theFroggers"
-                    label={theFroggers.label}
-                    selected={pathname.startsWith("/theFroggers")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="grid"
-                    href="/theFroggers"
-                    selected={pathname.startsWith("/theFroggers")}
-                  />
-                </>
+                <ToggleButton
+                  prefixIcon="grid"
+                  href="/theFroggers"
+                  label={theFroggers.label}
+                  selected={pathname.startsWith("/theFroggers")}
+                />
               )}
               {routes["/community"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="book"
-                    href="/community"
-                    label={blog.label}
-                    selected={pathname.startsWith("/community")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="book"
-                    href="/community"
-                    selected={pathname.startsWith("/community")}
-                  />
-                </>
+                <ToggleButton
+                  prefixIcon="book"
+                  href="/community"
+                  label={blog.label}
+                  selected={pathname.startsWith("/community")}
+                />
               )}
               {routes["/nfts"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="gallery"
-                    href="/nfts"
-                    label={gallery.label}
-                    selected={pathname.startsWith("/nfts")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="gallery"
-                    href="/nfts"
-                    selected={pathname.startsWith("/nfts")}
-                  />
-                </>
+                <ToggleButton
+                  prefixIcon="gallery"
+                  href="/nfts"
+                  label={gallery.label}
+                  selected={pathname.startsWith("/nfts")}
+                />
               )}
               {display.themeSwitcher && (
                 <>
@@ -185,15 +140,14 @@ export const Header = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Flex fillWidth horizontal="end" vertical="center">
+        <Flex fillWidth style={{ justifyContent: 'flex-end', alignItems: 'center' }}>
           <Flex
             paddingRight="12"
-            horizontal="end"
-            vertical="center"
+            style={{ justifyContent: 'flex-end', alignItems: 'center' }}
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
+            <Flex hide>{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
           </Flex>
         </Flex>
       </Flex>

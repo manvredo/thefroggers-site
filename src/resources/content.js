@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "the",
+  lastName: "Froggers",
   get name() {
-    return `${this.firstName} ${this.lastName}`;
+    return `${this.firstName}${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
+  role: "NFT Collection",
+  avatar: "/images/Frogger_About_01.jpg",
   email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["10 000", "Froggers"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -83,35 +83,28 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://www.instagram.com/thefroggers.io/",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        TheFroggers is a collection of 10,000 unique NFTs on the blockchain, created by Manvredo in January 2022 to expand and develop the story of the Froggers in the 3D world of Frogtopia.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "OUR MISSION",
     experiences: [
       {
-        company: "FLY",
+        company: "TheFroggers",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "NFT Collection",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            At TheFroggers, our mission is to provide a platform that excites both collectors and art enthusiasts through innovative use of blockchain technology and digital art. We aim to build a thriving community centered around collaborative storytelling and creative interactions.
           </>,
         ],
         images: [
@@ -119,79 +112,28 @@ const about = {
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
-            width: 16,
-            height: 9,
+            width: 21,
+            height: 12,
           },
         ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "ORIGINS",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "TheFroggers Vision",
+        description: <>The idea behind TheFroggers stemmed from the vision to create an engaging digital world where creativity, community, and technology converge. Each of the 10,000 Froggers was designed with individual character and style, forming a diverse and vibrant urban society within the metaverse.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+      // Empty skills array - section is hidden anyway
     ],
   },
 };
