@@ -10,7 +10,6 @@ export const Footer = () => {
       fillWidth
       padding="24"
       horizontal="center"
-      mobileDirection="column"
       style={{ 
         borderTop: '1px solid rgba(255,255,255,0.1)',
         background: 'rgba(0,0,0,0.3)'
@@ -30,7 +29,6 @@ export const Footer = () => {
         <Flex 
           gap="24" 
           horizontal="center" 
-          mobileDirection="column"
           wrap
         >
           <SmartLink href="/privacy-policy">
@@ -81,7 +79,7 @@ export const Footer = () => {
         </Flex>
         
       </Flex>
-      <Flex height="40" show="s"></Flex>
+      <Flex height="40"></Flex>
     </Flex>
   );
 };

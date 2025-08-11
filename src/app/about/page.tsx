@@ -47,7 +47,7 @@ export default function About() {
     {
       title: about.technical.title,
       display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      items: about.technical.skills?.map((skill: any) => skill.title) || [],
     },
   ];
   return (
@@ -72,12 +72,11 @@ export default function About() {
           position="fixed"
           paddingLeft="24"
           gap="32"
-          hide="s"
         >
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Flex fillWidth mobileDirection="column" horizontal="center">
+      <Flex fillWidth direction="column" horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
@@ -91,7 +90,7 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             {person.languages.length > 0 && (
-              <Flex wrap gap="8">
+              <Flex wrap={true} gap="8">
                 {person.languages.map((language, index) => (
                   <Tag key={language} size="l">
                     {language}
@@ -145,7 +144,7 @@ export default function About() {
               {person.role}
             </Text>
 {social.length > 0 && (
-  <Flex className={styles.blockAlign} style={{ marginTop: '50px' }} paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
+  <Flex className={styles.blockAlign} style={{ marginTop: '50px' }} paddingBottom="8" gap="8" wrap={true} horizontal="center" fitWidth data-border="rounded">
     {social.map(
       (item) =>
         item.link && (
@@ -191,7 +190,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
+                    <Flex fillWidth horizontal="between" vertical="end" marginBottom="4">
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
@@ -276,15 +275,15 @@ export default function About() {
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
+                {about.technical.skills.map((skill: any, index: number) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap={true}>
+                        {skill.images.map((image: any, index: number) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
