@@ -1,0 +1,174 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.desktop {
+  box-sizing: border-box;
+  position: relative;
+  width: 1920px;
+  height: 1280px;
+  background: #070F12;
+  border: 1px solid #FFFFFF;
+  transform-origin: center center;
+  
+  // Responsive scaling für verschiedene Bildschirmgrößen
+  @media (max-width: 1960px) {
+    transform: scale(calc((100vw - 40px) / 1920));
+  }
+  
+  @media (max-width: 1440px) {
+    transform: scale(calc((100vw - 40px) / 1920));
+  }
+  
+  @media (max-width: 1024px) {
+    transform: scale(calc((100vw - 40px) / 1920));
+  }
+  
+  @media (max-width: 768px) {
+    transform: scale(calc((100vw - 40px) / 1920));
+  }
+  
+  // Maximale Skalierung für große Bildschirme
+  @media (min-width: 1961px) {
+    transform: scale(1);
+  }
+}
+
+.bgContainer {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1440px;
+  height: 1100px;
+  left: 240px;
+  top: 90px;
+  background: #363636;
+  opacity: 0.19;
+  border: 2px solid #606060;
+  border-radius: 21px;
+  z-index: 1;
+}
+
+.froggerBubble {
+  box-sizing: border-box;
+  position: absolute;
+  width: 170.41px;
+  height: 170.41px;
+  left: 270px;
+  top: 54px;
+  background: url('/images/Frogger_Special_Edition_01.png');
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  border: 2px solid #A2A2A2;
+  border-radius: 200px 200px 0px 200px;
+  z-index: 10;
+}
+
+.textRibbit {
+  position: absolute;
+  width: 330.67px;
+  height: 23.75px;
+  left: 450px;
+  top: 160px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #D80000;
+  z-index: 10;
+}
+
+.textFroggers {
+  position: absolute;
+  width: 489.33px;
+  height: 23.75px;
+  left: 450px;
+  top: 180px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #86B700;
+  z-index: 10;
+}
+
+.textMetaverse {
+  position: absolute;
+  width: 408px;
+  height: 47.5px;
+  left: 450px;
+  top: 200px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #0054EF;
+  z-index: 10;
+}
+
+.socialIcon {
+  position: absolute;
+  width: 35.78px;
+  height: 35.78px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.youtube {
+  @extend .socialIcon;
+  left: 1525px;
+  top: 42px;
+  background-image: url('/images/youtube-square-red-logo-15975.png');
+}
+
+.twitter {
+  @extend .socialIcon;
+  left: 1570px;
+  top: 42px;
+  background-image: url('/images/twitter-x-logo-blue-square-round-20857.png');
+}
+
+.instagram {
+  @extend .socialIcon;
+  left: 1614px;
+  top: 42px;
+  background-image: url('/images/instagram-square-logo-15976.png');
+}
+
+.logoHalo {
+  box-sizing: border-box;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 1577px;
+  top: 120px;
+  border: 1px solid #767676;
+  border-radius: 90px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.logoVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 90px;
+}

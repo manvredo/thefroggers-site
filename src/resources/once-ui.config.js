@@ -5,11 +5,18 @@ const baseURL = "https://demo.magic-portfolio.com";
 
 const routes = {
   "/": true,
+  "/landing": true,
   "/about": true,
   "/mint": true,
   "/theFroggers": true,
   "/community": true,
   "/nfts": true,
+  "/privacy-policy": true,
+  "/shop": true,
+  "/contact": true,
+  "/terms": true,
+  "/nft-license": true,
+  "/imprint": true,
 };
 
 const display = {

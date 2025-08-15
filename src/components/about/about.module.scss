@@ -19,9 +19,214 @@
     }
 }
 
-.buttonsContainer {
-    margin-top: 50px !important;
+
+/* BG - Background Container */
+.bgContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 1024px;
+    margin: -60px auto 40px auto;
+    display: block;
 }
+
+/* Rectangle 1 - Main Container */
+.rectangle1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1143px;
+    height: 855px;
+    left: 50%;
+    top: 84px;
+    transform: translateX(-50%);
+    background: #363636;
+    border: 2px solid #606060;
+    border-radius: 21px;
+}
+
+/* Frogger_About_01 1 */
+.froggerAbout01 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    left: 180px;
+    top: 120px;
+    background: url('/images/Frogger_About_01.jpg');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: normal;
+    border: 2px solid #A2A2A2;
+    border-radius: 200px 200px 0px 200px;
+}
+
+/* Rectangle 2 */
+.rectangle2 {
+    position: absolute;
+    width: 281px;
+    height: 161px;
+    left: 330px;
+    top: 120px;
+    background: #979797;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+}
+
+/* Rectangle 3 */
+.rectangle3 {
+    position: absolute;
+    width: 281px;
+    height: 161px;
+    left: 630px;
+    top: 120px;
+    background: #979797;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+}
+
+/* theFroggers */
+.theFroggersTitle {
+    position: absolute;
+    width: 205px;
+    height: 45px;
+    left: 930px;
+    top: 140px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+/* 10 000 */
+.numberText {
+    position: absolute;
+    width: 117px;
+    height: 45px;
+    left: 950px;
+    top: 190px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+/* Ellipse 1 */
+.ellipse1 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 1150px;
+    top: 150px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+/* text_01 */
+.text01 {
+    position: absolute;
+    width: 187px;
+    height: 184px;
+    left: 180px;
+    top: 300px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* text_02 */
+.text02 {
+    position: absolute;
+    width: 183px;
+    height: 139px;
+    left: 390px;
+    top: 300px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* text_03 */
+.text03 {
+    position: absolute;
+    width: 228px;
+    height: 139px;
+    left: 600px;
+    top: 300px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* Frogger_About_02 1 */
+.froggerAbout02 {
+    position: absolute;
+    width: 300px;
+    height: 261px;
+    left: 180px;
+    top: 520px;
+    background: url('/images/Frogger_About_02.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ribbit, Ribbit From Pond to Pixel Hey! */
+.ribbitText {
+    position: absolute;
+    width: 248px;
+    height: 19px;
+    left: 500px;
+    top: 520px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* We are 10,000 Frogs. One Blockchain. Endless Hops */
+.frogsText {
+    position: absolute;
+    width: 344px;
+    height: 19px;
+    left: 500px;
+    top: 550px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* Frogs in the Metaverse — Because Why Not? */
+.metaverseText {
+    position: absolute;
+    width: 306px;
+    height: 38px;
+    left: 500px;
+    top: 580px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
 
 @media (max-width: breakpoints.$s) {
     .avatar {
@@ -34,5 +239,38 @@
 
     .blockAlign {
         align-self: center;
+    }
+
+    .bgContainer {
+        width: 90vw;
+        height: 60vw;
+        max-width: 600px;
+        max-height: 450px;
+    }
+
+    .rectangle1 {
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        top: 10%;
+        border-radius: 15px;
+    }
+
+    // Scale down all elements for mobile
+    .froggerAbout01,
+    .rectangle2,
+    .rectangle3,
+    .theFroggersTitle,
+    .numberText,
+    .ellipse1,
+    .text01,
+    .text02,
+    .text03,
+    .froggerAbout02,
+    .ribbitText,
+    .frogsText,
+    .metaverseText {
+        transform: scale(0.4);
+        transform-origin: top left;
     }
 }
