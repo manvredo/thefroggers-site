@@ -172,3 +172,69 @@
   object-fit: cover;
   border-radius: 90px;
 }
+
+.froggerAbout {
+  position: absolute;
+  width: 387.3px;
+  height: 336.95px;
+  left: 744px;
+  top: 334px;
+  background: url('/images/Frogger_About_02.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.tenThousandFroggers {
+  position: absolute;
+  width: 427.32px;
+  height: 90.37px;
+  left: 731px;
+  top: 629px;
+  background: url('/images/10000Froggers_02.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.froggersText {
+  position: absolute;
+  width: 232.21px;
+  height: 88.96px;
+  left: 864.15px;
+  top: 696.8px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 76px;
+  color: #A40000;
+  transform: rotate(4deg);
+  z-index: 10;
+}
+
+.aboutBalloon {
+  position: absolute;
+  width: 374.39px;
+  height: 380.84px;
+  left: 294px;
+  top: 384.4px;
+  background: url('/images/Ballon_Yellow_Laugh.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.ballonYellowFrogger {
+  position: absolute;
+  width: 358.9px;
+  height: 358.9px;
+  left: 1269.22px;
+  top: 316px;
+  background: url('/images/Ballon_Yellow_Frogger.png');
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #9D4900;
+  border-radius: 15px;
+  z-index: 10;
+}

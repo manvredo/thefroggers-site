@@ -59,6 +59,21 @@ export default function About() {
               <source src="/videos/Frog_Halo_01.mp4" type="video/mp4" />
             </video>
           </div>
+
+          {/* Frogger_About_01 */}
+          <div className={styles.froggerAbout}></div>
+
+          {/* 10000Froggers_01 */}
+          <div className={styles.tenThousandFroggers}></div>
+
+          {/* Froggers_01 */}
+          <div className={styles.froggersText}>Froggers</div>
+
+          {/* ABOUT */}
+          <div className={styles.aboutBalloon}></div>
+
+          {/* Ballon_Yellow_Frogger 1 */}
+          <div className={styles.ballonYellowFrogger}></div>
         </div>
       </div>
     </>
