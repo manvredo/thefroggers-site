@@ -62,17 +62,6 @@ export default function About() {
           
           {/* NEUES LOGO */}
           <div className={styles.logoOverlay}></div>
-          
-          {/* ABOUT Text */}
-          <div className={styles.aboutText}>ABOUT</div>
-          
-          {/* Beschreibungstext */}
-          <div className={styles.descriptionText}>
-            TheFroggers is a collection of 10,000 unique NFTs on the blockchain, created by Manvredo in January 2022 to expand and develop the story of the Froggers in the 3D world of Frogtopia.
-          </div>
-          
-          {/* Gelber Laugh Ballon */}
-          <div className={styles.ballonYellowLaugh}></div>
         </div>
       </div>
     </>
