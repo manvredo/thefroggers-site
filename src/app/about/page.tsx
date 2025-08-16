@@ -47,7 +47,7 @@ export default function About() {
     {
       title: about.technical.title,
       display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      items: about.technical.skills ? about.technical.skills.map((skill) => skill.title) : [],
     },
   ];
   
