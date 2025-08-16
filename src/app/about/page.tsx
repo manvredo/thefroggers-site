@@ -37,18 +37,14 @@ export default function About() {
     {
       title: about.work.title,
       display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      items: about.work.experiences ? about.work.experiences.map((experience) => experience.company) : [],
     },
     {
       title: about.studies.title,
       display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
+      items: about.studies.institutions ? about.studies.institutions.map((institution) => institution.name) : [],
     },
-    {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills ? about.technical.skills.map((skill) => skill.title) : [],
-    },
+    // Technical section entfernt, da es auf false gesetzt ist
   ];
   
   return (
