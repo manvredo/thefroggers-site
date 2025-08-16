@@ -57,84 +57,10 @@ export default function About() {
           <div className={styles.tenThousandFroggers}></div>
           {/* Froggers_01 */}
           <div className={styles.froggersText}>Froggers</div>
-          {/* ABOUT */}
-          <div className={styles.aboutBalloon}></div>
           {/* Ballon_Yellow_Frogger 1 */}
-          <div className={styles.ballonYellowFrogger}></div>
-          
-          {/* DEIN NEUES LOGO an Position X: 1245px, Y: 119px */}
-          <div
-            style={{
-              position: "absolute",
-              left: "1245px",
-              top: "119px",
-              width: "280.41px",
-              height: "75.15px",
-              backgroundImage: "url('/images/Logo_01 copy.png')",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              opacity: 0.21,
-              zIndex: 1,
-              pointerEvents: "none"
-            }}
-          />
-          
-          {/* ABOUT Text */}
-          <div
-            style={{
-              position: "absolute",
-              left: "294px",
-              top: "390.86px",
-              width: "211.72px",
-              height: "82.62px",
-              fontFamily: "'Annie Use Your Telescope'",
-              fontStyle: "normal",
-              fontWeight: 400,
-              fontSize: "36px",
-              lineHeight: "52px",
-              color: "#BFBFBF",
-              zIndex: 10
-            }}
-          >
-            ABOUT
-          </div>
-          
-          {/* Text_01 */}
-          <div
-            style={{
-              position: "absolute",
-              left: "313px",
-              top: "508px",
-              width: "239px",
-              height: "200px",
-              fontFamily: "'Outfit'",
-              fontStyle: "normal",
-              fontWeight: 300,
-              fontSize: "20px",
-              lineHeight: "25px",
-              color: "#AD9900",
-              zIndex: 10
-            }}
-          >
-            TheFroggers is a collection of 10,000 unique NFTs on the blockchain, created by Manvredo in January 2022 to expand and develop the story of the Froggers in the 3D world of Frogtopia.
-          </div>
-          
-          {/* Ballon_Yellow_Laugh */}
-          <div
-            style={{
-              position: "absolute",
-              left: "316px",
-              top: "395px",
-              width: "374.39px",
-              height: "374.39px",
-              backgroundImage: "url('/images/Ballon_Yellow_Laugh.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              border: "3px solid #9D8B00",
-              borderRadius: "15px",
-              zIndex: 9
-            }}
-          />
+                 
+          {/* NEUES LOGO */}
+          <div className={styles.logoOverlay}></div>
         </div>
       </div>
     </>
