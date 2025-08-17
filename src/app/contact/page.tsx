@@ -51,7 +51,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error('❌ Email-Fehler:', error);
-      setError(error.message || 'Fehler beim Senden der Nachricht. Bitte versuche es später noch einmal.');
+      setError(error instanceof Error ? error.message : 'Fehler beim Senden der Nachricht. Bitte versuche es später noch einmal.');
     }
     
     setIsSubmitting(false);
