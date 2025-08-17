@@ -111,8 +111,8 @@ export default function Contact() {
 
           {/* Contact Subtitle */}
           <div className={styles.contactSubtitle}>
-            Got questions about TheFroggers? We'd love to hear from you! 
-            Drop us a message and we'll hop back to you soon.
+            Got questions about TheFroggers? We&apos;d love to hear from you! 
+            Drop us a message and we&apos;ll hop back to you soon.
           </div>
 
           {/* Contact Form Container */}
@@ -202,7 +202,7 @@ export default function Contact() {
             {/* Success Message */}
             {isSubmitted && (
               <div className={styles.successMessage}>
-                🐸 Thanks for your message! We'll hop back to you soon.
+                🐸 Thanks for your message! We&apos;ll hop back to you soon.
               </div>
             )}
           </div>
