@@ -31,6 +31,25 @@ const protectedRoutes = {
   "/mint/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
+// GOOGLE FONTS IMPORT
+import { Outfit } from "next/font/google";
+import { Londrina_Solid } from "next/font/google";
+
+// Google Fonts Konfiguration
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300"], // Light
+});
+
+const londrina = Londrina_Solid({
+  variable: "--font-londrina",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["900"], // Solid für Überschriften
+});
+
 // Use system fonts as fallback
 const heading = {
   variable: "--font-heading",
@@ -57,6 +76,8 @@ const fonts = {
   body: body,
   label: label,
   code: code,
+  outfit: outfit,        // NEUE FONTS
+  londrina: londrina,    // NEUE FONTS
 };
 
 // default customization applied to the HTML in the main layout.tsx

@@ -5,3 +5,4 @@ export { Providers } from "@/components/Providers";
 export { ScrollToHash } from "@/components/ScrollToHash";
 export { ThemeToggle } from "@/components/ThemeToggle";
 export { default as TheFroggersTemplate } from "@/components/TheFroggersTemplate";
+export { CustomMDX } from "@/components/mdx";
