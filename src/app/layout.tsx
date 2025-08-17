@@ -34,6 +34,8 @@ export default async function RootLayout({
         fonts.body.variable,
         fonts.label.variable,
         fonts.code.variable,
+        fonts.outfit.variable,    // NEUE FONTS HINZUGEFÜGT
+        fonts.londrina.variable,  // NEUE FONTS HINZUGEFÜGT
       )}
     >
       <head>

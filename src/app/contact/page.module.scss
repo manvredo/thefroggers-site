@@ -78,7 +78,7 @@
   height: 23.75px;
   left: 450px;
   top: 160px;
-  font-family: 'Outfit';
+  font-family: var(--font-outfit);
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -93,7 +93,7 @@
   height: 23.75px;
   left: 450px;
   top: 180px;
-  font-family: 'Outfit';
+  font-family: var(--font-outfit);
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -108,7 +108,7 @@
   height: 47.5px;
   left: 450px;
   top: 200px;
-  font-family: 'Outfit';
+  font-family: var(--font-outfit);
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -172,3 +172,174 @@
   object-fit: cover;
   border-radius: 90px;
 }
+
+// ===============================
+// GOOGLE MAPS - NOW ON THE RIGHT
+// ===============================
+
+.mapsLabel {
+  position: absolute;
+  left: 850px;          // Nach rechts getauscht
+  top: 300px;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 14px;
+  color: #AD9900;
+  z-index: 10;
+}
+
+.googleMaps {
+  position: absolute;
+  left: 850px;          // Nach rechts getauscht
+  top: 320px;
+  width: 450px;
+  height: 525px;
+  border: 2px solid #606060;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(20%) contrast(1.1);
+  }
+}
+
+// ===============================
+// CONTACT FORM STYLES - NOW ON THE LEFT
+// ===============================
+
+.contactHeading {
+  position: absolute;
+  left: 300px;          // Nach links getauscht
+  top: 300px;
+  font-family: var(--font-londrina);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: #86B700;
+  z-index: 10;
+}
+
+.contactSubtitle {
+  position: absolute;
+  left: 300px;          // Nach links getauscht
+  top: 370px;
+  width: 450px;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #BFBFBF;
+  z-index: 10;
+}
+
+.formContainer {
+  position: absolute;
+  left: 300px;          // Nach links getauscht
+  top: 440px;
+  width: 450px;
+  z-index: 10;
+}
+
+// FROSCH ENTFERNT - decorativeFrog Klasse gelöscht
+
+.inputGroup {
+  margin-bottom: 16px;  // Kompakter
+}
+
+.inputLabel {
+  display: block;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 14px;      // Kleiner
+  color: #AD9900;
+  margin-bottom: 6px;   // Kleiner
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;        // Kleiner
+  font-size: 14px;      // Kleiner
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  background: rgba(54, 54, 54, 0.8);
+  border: 2px solid #606060;
+  border-radius: 6px;   // Kleiner
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  
+  &:focus {
+    border-color: #86B700;
+  }
+  
+  &::placeholder {
+    color: #999999;
+  }
+}
+
+.textareaField {
+  width: 100%;
+  padding: 12px;        // Kleiner
+  font-size: 14px;      // Kleiner
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  background: rgba(54, 54, 54, 0.8);
+  border: 2px solid #606060;
+  border-radius: 6px;   // Kleiner
+  color: #FFFFFF;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  
+  &:focus {
+    border-color: #86B700;
+  }
+  
+  &::placeholder {
+    color: #999999;
+  }
+}
+
+.submitButton {
+  width: 160px;         // Kleiner
+  height: 44px;         // Kleiner
+  background: #86B700;
+  border: none;
+  border-radius: 6px;   // Kleiner
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 16px;      // Kleiner
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover:not(:disabled) {
+    background: #9BD300;
+    transform: scale(1.05);
+  }
+  
+  &:disabled {
+    background: #555555;
+    cursor: not-allowed;
+  }
+}
+
+.successMessage {
+  margin-top: 24px;
+  padding: 16px;
+  background: rgba(134, 183, 0, 0.2);
+  border: 2px solid #86B700;
+  border-radius: 8px;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 16px;
+  color: #86B700;
+}
+
+// Frosch entfernt - decorativeFrog Klasse gelöscht
