@@ -1,5 +1,5 @@
 'use client';
-// NFT License Page
+// Privacy Policy
 import { Schema } from "@once-ui-system/core";
 import { baseURL } from "@/resources";
 import React from 'react';
@@ -40,10 +40,10 @@ export default function NFTLicense() {
           <div className={styles.imprintSimple}>
             <h1>Privacy Policy</h1>
             
-            <p>This privacy policy explains how we, theFroggers, collect, use, and share personal data when you visit the website thefroggers.io or use any of the services offered (together with the website, the "Services"). By accessing or using the Services, you consent to the collection and processing of your data in accordance with this policy.</p>
+            <p>This privacy policy explains how we, theFroggers, collect, use, and share personal data when you visit the website thefroggers.io or use any of the services offered (together with the website, the &quot;Services&quot;). By accessing or using the Services, you consent to the collection and processing of your data in accordance with this policy.</p>
             
             <h2>What personal data we collect</h2>
-            <p>"Personal data" includes information that can identify or contact you, such as your name, email address, and other details you provide in connection with your use of our Services, including automatically collected data related to your usage. When you visit the website or use the Services through it, we may automatically collect data related to your device, such as information about your web browser, IP address, location, and cookies installed on your device. While browsing the website, we may use cookies to collect data about which pages you visit and how you interact with the website.</p>
+            <p>&quot;Personal data&quot; includes information that can identify or contact you, such as your name, email address, and other details you provide in connection with your use of our Services, including automatically collected data related to your usage. When you visit the website or use the Services through it, we may automatically collect data related to your device, such as information about your web browser, IP address, location, and cookies installed on your device. While browsing the website, we may use cookies to collect data about which pages you visit and how you interact with the website.</p>
             
             <p>For detailed information about cookies and how to disable them, please visit http://www.allaboutcookies.org. Please note that some of our Services require certain cookies. If all cookies are disabled, some features of the Services may not be available. Aside from the above-mentioned data, we do not collect additional personal data from users of the website or the Services. However, to access the Services, users must set up a wallet with a third-party provider.</p>
             
@@ -104,10 +104,10 @@ export default function NFTLicense() {
             {/* German Version */}
             <h1>Datenschutzerklärung</h1>
             
-            <p>Diese Datenschutzerklärung erklärt, wie wir, theFroggers, personenbezogene Daten erheben, verwenden und weitergeben, wenn du die Website thefroggers.io besuchst oder einen unserer Dienste nutzt (zusammen mit der Website als „Dienste" bezeichnet). Indem du auf die Dienste zugreifst oder diese nutzt, stimmst du der Erhebung und Verarbeitung deiner Daten gemäß dieser Erklärung zu.</p>
+            <p>Diese Datenschutzerklärung erklärt, wie wir, theFroggers, personenbezogene Daten erheben, verwenden und weitergeben, wenn du die Website thefroggers.io besuchst oder einen unserer Dienste nutzt (zusammen mit der Website als &quot;Dienste&quot; bezeichnet). Indem du auf die Dienste zugreifst oder diese nutzt, stimmst du der Erhebung und Verarbeitung deiner Daten gemäß dieser Erklärung zu.</p>
             
             <h2>Erhobene personenbezogene Daten</h2>
-            <p>„Personenbezogene Daten" umfasst Informationen, die dich identifizieren oder mit dir in Kontakt treten lassen, wie zum Beispiel dein Name, deine E-Mail-Adresse und andere Details, die du im Zusammenhang mit der Nutzung unserer Dienste angibst, einschließlich automatisch gesammelter Daten, die mit deiner Nutzung verbunden sind. Wenn du die Website besuchst oder die Dienste darüber nutzt, können wir automatisch Daten zu deinem Gerät erheben, wie Informationen über deinen Webbrowser, deine IP-Adresse, deinen Standort und Cookies, die auf deinem Gerät installiert sind. Beim Surfen auf der Website können wir Cookies verwenden, um Daten darüber zu sammeln, welche Seiten du besuchst und wie du mit der Website interagierst.</p>
+            <p>&quot;Personenbezogene Daten&quot; umfasst Informationen, die dich identifizieren oder mit dir in Kontakt treten lassen, wie zum Beispiel dein Name, deine E-Mail-Adresse und andere Details, die du im Zusammenhang mit der Nutzung unserer Dienste angibst, einschließlich automatisch gesammelter Daten, die mit deiner Nutzung verbunden sind. Wenn du die Website besuchst oder die Dienste darüber nutzt, können wir automatisch Daten zu deinem Gerät erheben, wie Informationen über deinen Webbrowser, deine IP-Adresse, deinen Standort und Cookies, die auf deinem Gerät installiert sind. Beim Surfen auf der Website können wir Cookies verwenden, um Daten darüber zu sammeln, welche Seiten du besuchst und wie du mit der Website interagierst.</p>
             
             <p>Für detaillierte Informationen zu Cookies und wie du sie deaktivieren kannst, besuche bitte http://www.allaboutcookies.org. Beachte bitte, dass einige unserer Dienste bestimmte Cookies erfordern. Wenn alle Cookies deaktiviert sind, können einige Funktionen der Dienste möglicherweise nicht verfügbar sein. Abgesehen von den oben genannten Daten erheben wir keine zusätzlichen personenbezogenen Daten von Nutzern der Website oder der Dienste. Um jedoch auf die Dienste zuzugreifen, müssen die Nutzer ein Wallet bei einem Drittanbieter einrichten.</p>
             
@@ -176,7 +176,7 @@ export default function NFTLicense() {
             <p>This limitation of liability does not apply to damages caused by gross negligence or willful misconduct on our part. It does not apply to liabilities that cannot be excluded or limited under applicable law. In no event shall the liability of theFroggers exceed the amount you actually paid to us in the twelve months preceding the claim. You acknowledge that theFroggers provides the services based on these limitations of liability and the disclaimer in Section 15, and that without these disclaimers and limitations, the provision of the services would not be possible.</p>
             
             <h2>Indemnification</h2>
-            <p>You agree to defend, indemnify, and hold harmless theFroggers, its affiliates, licensors, and service providers, as well as their officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns, from and against any and all claims, liabilities, damages, judgments, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or related to your violation of these Terms of Use or your use of the services.</p>
+            <p>You agree to defend, indemnify, and hold harmless theFroggers, its affiliates, licensors, and service providers, as well as their officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns, from and against any and all claims, liabilities, damages, judgments, losses, costs, expenses, or fees (including reasonable attorneys&apos; fees) arising out of or related to your violation of these Terms of Use or your use of the services.</p>
             
             <h2>Applicable Law and Jurisdiction</h2>
             <p>All questions relating to the services and these Terms of Use, as well as all disputes or claims arising from or related to them, are governed by the laws of the State of New York. Any legal actions must be initiated exclusively in the federal courts of the United States or the courts of the State of New York.</p>
