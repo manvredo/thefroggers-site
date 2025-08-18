@@ -57,8 +57,7 @@ export default function About() {
           <div className={styles.tenThousandFroggers}></div>
           {/* Froggers_01 */}
           <div className={styles.froggersText}>Froggers</div>
-          {/* Ballon_Yellow_Frogger 1 */}
-          <div className={styles.ballonYellowFrogger}></div>
+          
           
           {/* NEUES LOGO */}
           <div className={styles.logoOverlay}></div>
