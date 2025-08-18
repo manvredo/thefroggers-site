@@ -58,6 +58,32 @@ export default function About() {
           {/* Froggers_01 */}
           <div className={styles.froggersText}>Froggers</div>
           
+          {/* TheFroggers collection text */}
+          <div className={styles.collectionText}>
+            TheFroggers is a collection of 10,000 unique NFTs on the blockchain, created by Manvredo in January 2022 to expand and develop the story of the Froggers in the 3D world of Frogtopia.
+          </div>
+
+          {/* Ballon_Yellow_Laugh 1 */}
+          <div className={styles.ballonYellowLaugh}></div>
+
+          {/* ABOUT */}
+          <div className={styles.aboutTitle}>ABOUT</div>
+          
+          {/* Ballon_Yellow_Frogger 1 */}
+          <div className={styles.ballonYellowFrogger}></div>
+
+          {/* OUR MISSION */}
+          <div className={styles.ourMissionTitle}>OUR MISSION</div>
+
+          {/* OUR_MSSION_Text_01 */}
+          <div className={styles.ourMissionText01}>
+            [At theFroggers, our mission is to provide a platform that excites both collectors and art enthusiasts through innovative use of blockchain technology and digital art. ]
+          </div>
+
+          {/* OUR_MSSION_Text_02 */}
+          <div className={styles.ourMissionText02}>
+            [We aim to build a thriving community centered around collaborative storytelling and creative interactions.]
+          </div>
           
           {/* NEUES LOGO */}
           <div className={styles.logoOverlay}></div>

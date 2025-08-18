@@ -225,3 +225,115 @@
   z-index: 10;
 }
 
+.collectionText {
+  position: absolute;
+  width: 239px;
+  height: 200px;
+  left: 342px;
+  top: 468px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #AD9900;
+  transform: rotate(-2deg);
+  z-index: 10;
+}
+
+.ballonYellowLaugh {
+  position: absolute;
+  width: 374.39px;
+  height: 374.39px;
+  left: 318px;
+  top: 344px;
+  background: url('/images/Ballon_Yellow_Laugh.png');
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #9D8B00;
+  border-radius: 15px;
+  transform: rotate(-2deg);
+  z-index: 10;
+}
+
+.aboutTitle {
+  position: absolute;
+  width: 211.72px;
+  height: 82.62px;
+  left: 338px;
+  top: 345px;
+  font-family: 'Annie Use Your Telescope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 92px;
+  color: #EDD900;
+  transform: rotate(-2deg);
+  z-index: 10;
+}
+
+.ballonYellowFrogger {
+  position: absolute;
+  width: 365.24px;
+  height: 365.24px;
+  left: 1249px;
+  top: 306px;
+  background: url('/images/Ballon_Yellow_Frogger.png');
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #9D4900;
+  border-radius: 15px;
+  transform: rotate(3deg);
+  z-index: 10;
+}
+
+.ourMissionTitle {
+  position: absolute;
+  width: 205.33px;
+  height: 82.36px;
+  left: 1411px;
+  top: 318px;
+  font-family: 'Annie Use Your Telescope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 77px;
+  letter-spacing: -0.06em;
+  color: #F99900;
+  transform: rotate(3deg);
+  z-index: 10;
+}
+
+.ourMissionText01 {
+  position: absolute;
+  width: 244px;
+  height: 247px;
+  left: 1355px;
+  top: 419px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: right;
+  color: #CF6100;
+  transform: rotate(3deg);
+  z-index: 10;
+}
+
+.ourMissionText02 {
+  position: absolute;
+  width: 240px;
+  height: 99.77px;
+  left: 1351px;
+  top: 567px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: right;
+  color: #9C9C9C;
+  transform: rotate(3deg);
+  z-index: 10;
+}
