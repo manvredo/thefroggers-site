@@ -36,153 +36,153 @@ export default function NFTLicense() {
             Frogs in the Metaverse — Because Why Not?
           </div>
 
-          {/* NFT LICENSE TEXT */}
+          {/* PRIVACY POLICY TEXT */}
           <div className={styles.imprintSimple}>
-            <h1>NFT License</h1>
+            <h1>Privacy Policy</h1>
             
-            <p>Ownership of a <em>The Froggers</em> NFT grants you a license to use the artwork associated with the NFT ("Art"), which you may exercise for as long as you own the NFT ("NFT License").</p>
+            <p>This privacy policy explains how we, theFroggers, collect, use, and share personal data when you visit the website thefroggers.io or use any of the services offered (together with the website, the &quot;Services&quot;). By accessing or using the Services, you consent to the collection and processing of your data in accordance with this policy.</p>
             
-            <p>Our NFTs provide the owner with a limited license to use the Art represented by the NFT. This license is exclusive to the owner and is valid only as long as they retain ownership of the NFT.</p>
+            <h2>What personal data we collect</h2>
+            <p>&quot;Personal data&quot; includes information that can identify or contact you, such as your name, email address, and other details you provide in connection with your use of our Services, including automatically collected data related to your usage. When you visit the website or use the Services through it, we may automatically collect data related to your device, such as information about your web browser, IP address, location, and cookies installed on your device. While browsing the website, we may use cookies to collect data about which pages you visit and how you interact with the website.</p>
             
-            <p>Your NFT License supplements our Terms of Service and outlines your rights regarding the Art in any <em>The Froggers</em> NFTs you hold.</p>
+            <p>For detailed information about cookies and how to disable them, please visit http://www.allaboutcookies.org. Please note that some of our Services require certain cookies. If all cookies are disabled, some features of the Services may not be available. Aside from the above-mentioned data, we do not collect additional personal data from users of the website or the Services. However, to access the Services, users must set up a wallet with a third-party provider.</p>
             
-            <p>If you sell, trade, donate, or otherwise transfer ownership of your NFT (each a "Transfer"), the NFT License automatically transfers to the new owner. Upon Transfer, your rights to the Art end, and you must stop any ongoing use of the Art and Derivatives.</p>
+            <h2>Data from third parties</h2>
+            <p>To use the Services, users must own an Ethereum wallet. If your wallet is used to mint or purchase a theFroggers NFT, your Ethereum account address will be transmitted to us by the platform where the wallet was created. Currently, we do not receive any personal data from third parties. Any data received from third parties in the future will also be subject to this privacy policy.</p>
             
-            <h3>This License applies to the following Collections:</h3>
+            <h2>External websites and services</h2>
+            <p>Our Services may contain links to third-party websites or applications, such as for account linking or payment services. However, we have no control over the privacy practices or content of these third-party providers. Therefore, we take no responsibility for how your data is handled on these sites. Please note that this privacy policy does not apply to third-party websites. If you navigate from our Services to another site, please review their privacy policies before submitting any personal data.</p>
+            
+            <h2>Use of your personal data</h2>
+            <p>We primarily use your personal data to process orders and requests related to our Services. Additional purposes include:</p>
             <ul>
-              <li>TheFroggers</li>
+              <li>Analyzing usage data to identify trends and improve your experience and our service offerings;</li>
+              <li>Resolving technical issues, preventing fraud, and protecting against abuse to ensure the security of our systems;</li>
+              <li>Collecting and analyzing aggregated data, such as visitor numbers and demographic patterns;</li>
+              <li>Fulfilling legal requirements and responding to regulatory requests;</li>
+              <li>Protecting our business interests.</li>
             </ul>
             
-            <p>This NFT License (the "License"), along with our Terms of Service, governs your rights and responsibilities in relation to the NFT, including the associated Art and its Transfer, as defined below.</p>
+            <p>In addition, we may use cookies and other technologies to store your preferences and provide you with personalized content tailored to your use of the Services. This data will be analyzed in aggregated form, so it does not allow for direct identification. Such aggregated information may be shared with our partners and business associates to improve the Services.</p>
             
-            {/* Definitions and detailed terms */}
-            <h2>1. Definitions</h2>
-            <p><strong>"Art"</strong> refers to any image, design, drawing, or other graphic work represented by a The Froggers NFT that you own.</p>
-            <p><strong>"The Froggers NFT"</strong> is an NFT offered by us under this NFT License.</p>
-            <p><strong>"Creator Fee"</strong> is the amount due to The Froggers upon Transfer of a The Froggers NFT, as reflected in the NFT's smart contract.</p>
-            <p><strong>"Marketplace"</strong> means any third-party exchange or market that collects and distributes the Creator Fee payable upon Transfer to The Froggers.</p>
-            <p><strong>"Merchandise"</strong> means any physical or digital goods that are not NFTs.</p>
-            <p><strong>"NFT"</strong> is any blockchain-tracked, non-fungible token included in the Collections to which this License applies.</p>
-            <p><strong>"Own"</strong> refers to an NFT that you have purchased or acquired from a legitimate source, where proof of such purchase is recorded on the relevant blockchain.</p>
-            <p><strong>"Transfer"</strong> includes any sale, trade, donation, or other transfer of ownership of a The Froggers NFT.</p>
+            <h2>Sharing of personal data</h2>
+            <p>We will only share your personal data with trusted partners and service providers who assist us in providing the Services, such as in web hosting and cybersecurity. In the event of a merger, acquisition, or similar corporate restructuring, your data may be transferred to the acquiring entity. We will inform you about such changes if necessary. Additionally, we may disclose your data if required by law or to protect our rights and the security of our Services.</p>
             
-            <h2>2. Ownership</h2>
-            <p>This License grants you usage rights to the Art, but does not transfer ownership of the Art itself.</p>
-            <p>The Creator (or its licensors) retains all legal rights, title, and interest in the Art and all associated intellectual property rights. Your rights to the Art are limited to those described in this License. The Creator reserves all rights to the Art not expressly granted by this License.</p>
-            <p>Please support the community funded by the Creator Fee. Transfers should occur only on Marketplaces, and the Creator Fee is due upon Transfer unless a Marketplace pays it on your behalf.</p>
+            <h2>Sale of personal data</h2>
+            <p>theFroggers will not sell or rent your personal data to third parties without your explicit consent.</p>
             
-            <h2>3. Transfer</h2>
-            <h3>How to Transfer:</h3>
-            <p>You may only Transfer, or offer for Transfer, your The Froggers NFT on Marketplaces unless you receive prior written permission from us. When you list or offer your The Froggers NFT for Transfer, you must include a clear disclosure and link to this License, such as: "By purchasing this NFT, you agree to the applicable NFT License at https://thefroggers.io."</p>
+            <h2>Storage and processing in other countries</h2>
+            <p>Your personal data may be stored and processed in the United States or other countries where theFroggers or its service providers operate. If you are located in the European Union or another region with specific privacy laws, you consent to the transfer of your data to countries with potentially different privacy regulations.</p>
             
-            <h3>Creator Fee:</h3>
-            <p>Upon any Transfer, the Creator Fee is due. You remain responsible for paying the Creator Fee unless a Marketplace collects it on your behalf.</p>
+            <h2>Retention of personal data</h2>
+            <p>We will retain your personal data as long as necessary to fulfill our legal obligations or until you request the deletion of your data.</p>
             
-            <h3>Effect of Transfer:</h3>
-            <p>When you Transfer your The Froggers NFT, this License automatically passes to the new owner. Upon Transfer, your rights under this License cease, and you must stop any use of the Art and Derivatives.</p>
+            <h2>Security of your personal data</h2>
+            <p>We take commercially reasonable measures to ensure the security of your data, including encryption. However, we cannot guarantee that your data will be fully protected when transmitted to us.</p>
             
-            <h3>Residual Rights:</h3>
-            <p>If your rights under this License end, physical embodiments of the Art that you lawfully authorized may continue to be owned by others as provided under the U.S. Copyright Act. You may not distribute, sell, or make available any remaining copies in your possession.</p>
+            <h2>Children</h2>
+            <p>Our Services are not intended for individuals under 18 years of age. We do not knowingly collect data from individuals under 18 years old.</p>
             
-            <h2>4. License</h2>
-            <p>You may only use the Art:</p>
-            <ul>
-              <li>for your own non-commercial purposes;</li>
-              <li>to create derivative works that differ significantly from the Art in other NFTs; and</li>
-              <li>to commercialize your own Merchandise featuring the Art or your Derivatives.</li>
-            </ul>
+            <h2>Your rights</h2>
+            <p>You have the right to access, correct, update, or delete your personal data at any time. Please contact us at the address below to make such requests.</p>
             
-            <p>Subject to continued compliance with the terms of this License, the Creator grants you a worldwide, non-exclusive, royalty-free license to use the Art associated with your The Froggers NFTs solely for the following purposes:</p>
-            <ul>
-              <li>personal, non-commercial display and use;</li>
-              <li>creating Derivatives based on the Art, provided they differ significantly from any other The Froggers NFT Art, as determined by us in our sole discretion; and</li>
-              <li>commercializing Merchandise that includes, contains, or consists of the Art or your Derivatives.</li>
-            </ul>
+            <h2>Opt-out for direct marketing</h2>
+            <p>You may opt out of the use of your data for direct marketing purposes at any time by contacting us. If needed, you can also disable notifications or advertisements on your mobile device.</p>
             
-            <p>Sublicensing is permitted under a written agreement, provided that:</p>
-            <ul>
-              <li>sublicensed rights automatically end upon your Transfer of the The Froggers NFT, and are terminable by both the current Owner and us after Transfer; and</li>
-              <li>you make reasonable efforts to disclose all sublicenses to potential buyers before any Transfer.</li>
-            </ul>
+            <h2>Rights of residents of the European Economic Area (EEA)</h2>
+            <p>If you are located in the EEA, you have the right to access, correct, update, or delete your personal data.</p>
             
-            <h2>5. Restrictions</h2>
-            <p>You may not use the Art or Derivatives in connection with hatred, violence, cruelty, or any infringing manner. Derivatives may not depict hate speech, intolerance, or any similar offensive content.</p>
+            <h2>Rights of California consumers</h2>
+            <p>California residents have specific rights regarding their personal data, including the right to opt-out of the sale of their data or request the deletion of their data.</p>
             
-            <h2>6. Unpermitted Use</h2>
-            <p>If you are uncertain whether your intended use is permitted, please contact us. Violating this License may lead to termination, and the Creator may implement technical measures to restrict access to the Art. You may also be held responsible for any costs incurred in enforcing the terms of this License.</p>
+            <h2>Changes to the privacy policy</h2>
+            <p>This privacy policy is effective as of the date above. Any changes will be posted on our website and will take effect as of the date of posting.</p>
+            
+            <h2>Contact us</h2>
+            <p>If you have any questions about this privacy policy or wish to make a request regarding your personal data, please contact us at info@thefroggers.io.</p>
             
             {/* German Version */}
-            <h1>NFT-Lizenz</h1>
+            <h1>Datenschutzerklärung</h1>
             
-            <p>Der Besitz eines The Froggers NFTs gewährt dir eine Lizenz zur Nutzung des mit dem NFT verbundenen Kunstwerks („Kunst"), die du so lange ausüben kannst, wie du das NFT besitzt („NFT-Lizenz").</p>
+            <p>Diese Datenschutzerklärung erklärt, wie wir, theFroggers, personenbezogene Daten erheben, verwenden und weitergeben, wenn du die Website thefroggers.io besuchst oder einen unserer Dienste nutzt (zusammen mit der Website als &quot;Dienste&quot; bezeichnet). Indem du auf die Dienste zugreifst oder diese nutzt, stimmst du der Erhebung und Verarbeitung deiner Daten gemäß dieser Erklärung zu.</p>
             
-            <p>Unsere NFTs gewähren dem Besitzer eine begrenzte Lizenz zur Nutzung der Kunst, die durch das NFT dargestellt wird. Diese Lizenz ist exklusiv für den Besitzer und gilt nur, solange er das NFT besitzt.</p>
+            <h2>Erhobene personenbezogene Daten</h2>
+            <p>&quot;Personenbezogene Daten&quot; umfasst Informationen, die dich identifizieren oder mit dir in Kontakt treten lassen, wie zum Beispiel dein Name, deine E-Mail-Adresse und andere Details, die du im Zusammenhang mit der Nutzung unserer Dienste angibst, einschließlich automatisch gesammelter Daten, die mit deiner Nutzung verbunden sind. Wenn du die Website besuchst oder die Dienste darüber nutzt, können wir automatisch Daten zu deinem Gerät erheben, wie Informationen über deinen Webbrowser, deine IP-Adresse, deinen Standort und Cookies, die auf deinem Gerät installiert sind. Beim Surfen auf der Website können wir Cookies verwenden, um Daten darüber zu sammeln, welche Seiten du besuchst und wie du mit der Website interagierst.</p>
             
-            <p>Deine NFT-Lizenz ergänzt unsere Allgemeinen Geschäftsbedingungen und beschreibt deine Rechte in Bezug auf die Kunst der The Froggers NFTs, die du besitzt.</p>
+            <p>Für detaillierte Informationen zu Cookies und wie du sie deaktivieren kannst, besuche bitte http://www.allaboutcookies.org. Beachte bitte, dass einige unserer Dienste bestimmte Cookies erfordern. Wenn alle Cookies deaktiviert sind, können einige Funktionen der Dienste möglicherweise nicht verfügbar sein. Abgesehen von den oben genannten Daten erheben wir keine zusätzlichen personenbezogenen Daten von Nutzern der Website oder der Dienste. Um jedoch auf die Dienste zuzugreifen, müssen die Nutzer ein Wallet bei einem Drittanbieter einrichten.</p>
             
-            <p>Wenn du dein NFT verkaufst, tauschst, spendest oder anderweitig überträgst (jede Übertragung ist ein „Transfer"), wird die NFT-Lizenz automatisch auf den neuen Besitzer übertragen. Mit dem Transfer enden deine Rechte an der Kunst, und du musst jede fortlaufende Nutzung der Kunst und abgeleiteter Werke einstellen.</p>
+            <h2>Daten von Dritten</h2>
+            <p>Um die Dienste zu nutzen, müssen die Nutzer ein Ethereum-Wallet besitzen. Wenn dein Wallet verwendet wird, um ein theFroggers NFT zu prägen oder zu kaufen, wird deine Ethereum-Kontoadresse von der Plattform, auf der das Wallet erstellt wurde, an uns übermittelt. Derzeit erhalten wir keine personenbezogenen Daten von Dritten. Zukünftige Daten, die wir von Dritten erhalten, unterliegen ebenfalls dieser Datenschutzerklärung.</p>
             
-            <h3>Diese Lizenz gilt für die folgenden Kollektionen:</h3>
+            <h2>Externe Websites und Dienste</h2>
+            <p>Unsere Dienste können Links zu Websites oder Anwendungen von Drittanbietern enthalten, zum Beispiel für die Kontoverknüpfung oder Zahlungsdienste. Wir haben jedoch keine Kontrolle über die Datenschutzpraktiken oder Inhalte dieser Drittanbieter. Daher übernehmen wir keine Verantwortung dafür, wie deine Daten auf diesen Seiten behandelt werden. Bitte beachte, dass diese Datenschutzerklärung nicht für Websites Dritter gilt. Wenn du von unseren Diensten auf eine andere Seite navigierst, überprüfe bitte deren Datenschutzerklärungen, bevor du personenbezogene Daten übermittelst.</p>
+            
+            <h2>Verwendung deiner personenbezogenen Daten</h2>
+            <p>Wir verwenden deine personenbezogenen Daten in erster Linie, um Bestellungen und Anfragen im Zusammenhang mit unseren Diensten zu bearbeiten. Weitere Zwecke umfassen:</p>
             <ul>
-              <li>TheFroggers</li>
+              <li>Analyse von Nutzungsdaten, um Trends zu identifizieren und deine Erfahrung sowie unser Serviceangebot zu verbessern;</li>
+              <li>Lösung technischer Probleme, Betrugsprävention und Schutz vor Missbrauch, um die Sicherheit unserer Systeme zu gewährleisten;</li>
+              <li>Erhebung und Analyse aggregierter Daten, wie Besucherzahlen und demografische Muster;</li>
+              <li>Erfüllung gesetzlicher Anforderungen und Beantwortung behördlicher Anfragen;</li>
+              <li>Schutz unserer geschäftlichen Interessen.</li>
             </ul>
             
-            <p>Diese NFT-Lizenz (die „Lizenz") regelt zusammen mit unseren Allgemeinen Geschäftsbedingungen deine Rechte und Pflichten in Bezug auf das NFT, einschließlich der damit verbundenen Kunst und deren Übertragung, wie nachstehend definiert.</p>
+            <p>Zusätzlich können wir Cookies und andere Technologien verwenden, um deine Präferenzen zu speichern und dir personalisierte Inhalte basierend auf deiner Nutzung der Dienste anzubieten. Diese Daten werden in aggregierter Form analysiert, sodass eine direkte Identifizierung nicht möglich ist. Solche aggregierten Informationen können mit unseren Partnern und Geschäftspartnern geteilt werden, um die Dienste zu verbessern.</p>
             
-            <h2>1. Definitionen</h2>
-            <p><strong>„Kunst"</strong> bezeichnet jedes Bild, Design, Zeichnung oder andere grafische Arbeiten, die durch ein The Froggers NFT, das du besitzt, dargestellt wird.</p>
-            <p><strong>„The Froggers NFT"</strong> ist ein NFT, das von uns im Rahmen dieser NFT-Lizenz angeboten wird.</p>
-            <p><strong>„Creator Fee"</strong> ist der Betrag, der bei der Übertragung eines The Froggers NFTs gemäß dem Smart Contract des NFTs an The Froggers zu zahlen ist.</p>
-            <p><strong>„Marktplatz"</strong> bedeutet jede Drittanbieterbörse oder -plattform, die die Creator Fee bei der Übertragung an The Froggers erhebt und verteilt.</p>
-            <p><strong>„Merchandise"</strong> bezeichnet alle physischen oder digitalen Waren, die keine NFTs sind.</p>
-            <p><strong>„NFT"</strong> ist ein beliebiger Blockchain-überwachter, nicht-fungibler Token, der in den Kollektionen enthalten ist, auf die diese Lizenz Anwendung findet.</p>
-            <p><strong>„Besitzen"</strong> bedeutet, dass du ein NFT gekauft oder aus einer legitimen Quelle erworben hast, wobei der Nachweis des Kaufs auf der entsprechenden Blockchain aufgezeichnet ist.</p>
-            <p><strong>„Transfer"</strong> umfasst den Verkauf, Tausch, die Spende oder jede andere Übertragung des Eigentums eines The Froggers NFTs.</p>
+            <h2>Weitergabe personenbezogener Daten</h2>
+            <p>Wir geben deine personenbezogenen Daten nur an vertrauenswürdige Partner und Dienstleister weiter, die uns bei der Bereitstellung der Dienste unterstützen, z. B. bei der Web-Hosting und Cybersicherheit. Im Falle einer Fusion, Übernahme oder ähnlichen Unternehmensumstrukturierung können deine Daten an das erwerbende Unternehmen übertragen werden. Wir werden dich über solche Änderungen informieren, wenn dies erforderlich ist. Darüber hinaus können wir deine Daten offenlegen, wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte und der Sicherheit unserer Dienste erforderlich ist.</p>
             
-            <h2>2. Eigentum</h2>
-            <p>Diese Lizenz gewährt dir Nutzungsrechte an der Kunst, überträgt jedoch nicht das Eigentum an der Kunst selbst.</p>
-            <p>Der Schöpfer (oder seine Lizenzgeber) behält alle gesetzlichen Rechte, Titel und Interessen an der Kunst sowie alle damit verbundenen geistigen Eigentumsrechte. Deine Rechte an der Kunst sind auf die in dieser Lizenz beschriebenen Rechte beschränkt. Der Schöpfer behält sich alle Rechte an der Kunst vor, die nicht ausdrücklich durch diese Lizenz gewährt werden.</p>
-            <p>Bitte unterstütze die Community, die durch die Creator Fee finanziert wird. Übertragungen sollten nur auf Marktplätzen erfolgen, und die Creator Fee ist bei der Übertragung fällig, es sei denn, ein Marktplatz zahlt sie in deinem Auftrag.</p>
+            <h2>Verkauf personenbezogener Daten</h2>
+            <p>theFroggers wird deine personenbezogenen Daten ohne deine ausdrückliche Zustimmung nicht an Dritte verkaufen oder vermieten.</p>
             
-            <h2>3. Übertragung</h2>
-            <h3>Wie man überträgt:</h3>
-            <p>Du darfst dein The Froggers NFT nur auf Marktplätzen übertragen oder zum Transfer anbieten, es sei denn, du erhältst vorher eine schriftliche Genehmigung von uns. Wenn du dein The Froggers NFT zum Transfer anbietest, musst du eine klare Offenlegung und einen Link zu dieser Lizenz angeben, wie zum Beispiel: „Durch den Kauf dieses NFTs stimmst du der geltenden NFT-Lizenz unter https://thefroggers.io zu."</p>
+            <h2>Speicherung und Verarbeitung in anderen Ländern</h2>
+            <p>Deine personenbezogenen Daten können in den Vereinigten Staaten oder anderen Ländern gespeichert und verarbeitet werden, in denen theFroggers oder seine Dienstleister tätig sind. Wenn du dich in der Europäischen Union oder einer anderen Region mit speziellen Datenschutzgesetzen befindest, stimmst du der Übertragung deiner Daten in Länder mit möglicherweise abweichenden Datenschutzbestimmungen zu.</p>
             
-            <h3>Creator Fee:</h3>
-            <p>Bei jeder Übertragung ist die Creator Fee fällig. Du bleibst für die Zahlung der Creator Fee verantwortlich, es sei denn, ein Marktplatz erhebt sie in deinem Auftrag.</p>
+            <h2>Aufbewahrung personenbezogener Daten</h2>
+            <p>Wir werden deine personenbezogenen Daten so lange aufbewahren, wie es erforderlich ist, um unseren rechtlichen Verpflichtungen nachzukommen oder bis du die Löschung deiner Daten verlangst.</p>
             
-            <h3>Wirkung der Übertragung:</h3>
-            <p>Wenn du dein The Froggers NFT überträgst, wird diese Lizenz automatisch auf den neuen Besitzer übertragen. Mit der Übertragung enden deine Rechte aus dieser Lizenz, und du musst jede Nutzung der Kunst und abgeleiteter Werke einstellen.</p>
+            <h2>Sicherheit deiner personenbezogenen Daten</h2>
+            <p>Wir ergreifen wirtschaftlich angemessene Maßnahmen, um die Sicherheit deiner Daten zu gewährleisten, einschließlich der Verschlüsselung. Wir können jedoch nicht garantieren, dass deine Daten bei der Übertragung an uns vollständig geschützt sind.</p>
             
-            <h3>Residualrechte:</h3>
-            <p>Wenn deine Rechte aus dieser Lizenz enden, können physische Ausführungen der Kunst, die du rechtmäßig autorisiert hast, weiterhin von anderen Besitzern gehalten werden, wie es im US-amerikanischen Urheberrechtsgesetz vorgesehen ist. Du darfst keine verbleibenden Kopien, die sich in deinem Besitz befinden, verbreiten, verkaufen oder zugänglich machen.</p>
+            <h2>Kinder</h2>
+            <p>Unsere Dienste sind nicht für Personen unter 18 Jahren bestimmt. Wir sammeln wissentlich keine Daten von Personen unter 18 Jahren.</p>
             
-            <h2>4. Lizenz</h2>
-            <p>Du darfst die Kunst nur:</p>
-            <ul>
-              <li>für eigene nicht-kommerzielle Zwecke nutzen;</li>
-              <li>abgeleitete Werke erstellen, die sich erheblich von der Kunst in anderen NFTs unterscheiden; und</li>
-              <li>eigene Merchandise-Produkte, die die Kunst oder deine abgeleiteten Werke enthalten, kommerziell vermarkten.</li>
-            </ul>
+            <h2>Deine Rechte</h2>
+            <p>Du hast das Recht, jederzeit auf deine personenbezogenen Daten zuzugreifen, diese zu korrigieren, zu aktualisieren oder zu löschen. Bitte kontaktiere uns unter der unten angegebenen Adresse, um solche Anfragen zu stellen.</p>
             
-            <p>Unter der Bedingung der fortlaufenden Einhaltung der Bedingungen dieser Lizenz gewährt dir der Schöpfer eine weltweite, nicht-exklusive, lizenzgebührenfreie Lizenz zur Nutzung der Kunst, die mit deinem The Froggers NFT verbunden ist, ausschließlich zu folgenden Zwecken:</p>
-            <ul>
-              <li>persönliche, nicht-kommerzielle Anzeige und Nutzung;</li>
-              <li>Erstellung von abgeleiteten Werken basierend auf der Kunst, vorausgesetzt, sie unterscheiden sich erheblich von anderen The Froggers NFT-Kunstwerken, wie es von uns nach eigenem Ermessen bestimmt wird; und</li>
-              <li>Kommerzialisierung von Merchandise, das die Kunst oder deine abgeleiteten Werke enthält oder daraus besteht.</li>
-            </ul>
+            <h2>Opt-out für Direktmarketing</h2>
+            <p>Du kannst jederzeit der Verwendung deiner Daten für Direktmarketing-Zwecke widersprechen, indem du uns kontaktierst. Falls erforderlich, kannst du auch Benachrichtigungen oder Werbung auf deinem mobilen Gerät deaktivieren.</p>
             
-            <p>Das Unterlizenzieren ist unter einer schriftlichen Vereinbarung gestattet, vorausgesetzt:</p>
-            <ul>
-              <li>die unterlizenzierte Rechte enden automatisch bei deiner Übertragung des The Froggers NFTs und können von beiden, dem aktuellen Eigentümer und uns, nach der Übertragung beendet werden; und</li>
-              <li>du unternimmst angemessene Anstrengungen, alle Unterlizenzen potenziellen Käufern vor der Übertragung offenzulegen.</li>
-            </ul>
+            <h2>Rechte der Bewohner des Europäischen Wirtschaftsraums (EWR)</h2>
+            <p>Wenn du dich im EWR befindest, hast du das Recht, auf deine personenbezogenen Daten zuzugreifen, diese zu korrigieren, zu aktualisieren oder zu löschen.</p>
             
-            <h2>5. Einschränkungen</h2>
-            <p>Du darfst die Kunst oder abgeleitete Werke nicht in Verbindung mit Hass, Gewalt, Grausamkeit oder in einer anderen rechtsverletzenden Weise verwenden. Abgeleitete Werke dürfen keine Hassrede, Intoleranz oder andere ähnliche anstößige Inhalte darstellen.</p>
+            <h2>Rechte der kalifornischen Verbraucher</h2>
+            <p>Bewohner Kaliforniens haben spezifische Rechte in Bezug auf ihre personenbezogenen Daten, einschließlich des Rechts, dem Verkauf ihrer Daten zu widersprechen oder die Löschung ihrer Daten zu verlangen.</p>
             
-            <h2>6. Unzulässige Nutzung</h2>
-            <p>Wenn du dir unsicher bist, ob deine beabsichtigte Nutzung zulässig ist, kontaktiere uns bitte. Die Verletzung dieser Lizenz kann zur Beendigung führen, und der Schöpfer kann technische Maßnahmen ergreifen, um den Zugriff auf die Kunst zu beschränken. Du kannst auch für alle Kosten haftbar gemacht werden, die durch die Durchsetzung der Bedingungen dieser Lizenz entstehen.</p>
+            <h2>Änderungen der Datenschutzerklärung</h2>
+            <p>Diese Datenschutzerklärung ist ab dem oben genannten Datum gültig. Änderungen werden auf unserer Website veröffentlicht und treten mit dem Datum der Veröffentlichung in Kraft.</p>
+            
+            <h2>Kontakt</h2>
+            <p>Wenn du Fragen zu dieser Datenschutzerklärung hast oder eine Anfrage bezüglich deiner personenbezogenen Daten stellen möchtest, kontaktiere uns bitte unter info@thefroggers.io.</p>
+
+            {/* Terms of Use Section */}
+            <h1>Terms of Use</h1>
+            
+            <p>These Terms of Use form a binding legal agreement between you and theFroggers. Please read them carefully before using our services.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, theFroggers, its subsidiaries, affiliates, officers, employees, agents, partners, and licensors will not be liable for any damages of any kind arising from the use or inability to use the services, websites, content, or other linked sites, including but not limited to direct, indirect, special, incidental, consequential, or punitive damages. This includes personal injury, pain and suffering, emotional distress, loss of revenue or profits, loss of business opportunities, data loss, or other damages, whether in tort (including negligence), breach of contract, or otherwise, even if such damages were foreseeable.</p>
+            
+            <p>This limitation of liability does not apply to damages caused by gross negligence or willful misconduct on our part. It does not apply to liabilities that cannot be excluded or limited under applicable law. In no event shall the liability of theFroggers exceed the amount you actually paid to us in the twelve months preceding the claim. You acknowledge that theFroggers provides the services based on these limitations of liability and the disclaimer in Section 15, and that without these disclaimers and limitations, the provision of the services would not be possible.</p>
+            
+            <h2>Indemnification</h2>
+            <p>You agree to defend, indemnify, and hold harmless theFroggers, its affiliates, licensors, and service providers, as well as their officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns, from and against any and all claims, liabilities, damages, judgments, losses, costs, expenses, or fees (including reasonable attorneys&apos; fees) arising out of or related to your violation of these Terms of Use or your use of the services.</p>
+            
+            <h2>Applicable Law and Jurisdiction</h2>
+            <p>All questions relating to the services and these Terms of Use, as well as all disputes or claims arising from or related to them, are governed by the laws of the State of New York. Any legal actions must be initiated exclusively in the federal courts of the United States or the courts of the State of New York.</p>
+            
+            <h2>Contact Information</h2>
+            <p>For questions or feedback regarding these Terms of Use, please contact us at info@thefroggers.io or visit thefroggers.io.</p>
           </div>
 
           {/* Social Media Icons */}
