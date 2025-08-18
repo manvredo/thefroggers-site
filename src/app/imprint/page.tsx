@@ -61,7 +61,7 @@ export default function Imprint() {
             <h2>Privacy Policy</h2>
             
             <h3>Introduction</h3>
-            <p>This Privacy Policy aims to inform you about the types of personal data (hereinafter referred to as "data") we process, the purposes for which we process it, and the extent of the processing. This Privacy Policy applies to all data processing we carry out, both as part of our services and specifically on our websites, in mobile applications, and within external online presences, such as our social media profiles (collectively referred to as the "Online Offering"). The terms used are not gender-specific.</p>
+            <p>This Privacy Policy aims to inform you about the types of personal data (hereinafter referred to as &quot;data&quot;) we process, the purposes for which we process it, and the extent of the processing. This Privacy Policy applies to all data processing we carry out, both as part of our services and specifically on our websites, in mobile applications, and within external online presences, such as our social media profiles (collectively referred to as the &quot;Online Offering&quot;). The terms used are not gender-specific.</p>
             
             <p><strong>Last Updated:</strong> March 31, 2022</p>
             
@@ -126,7 +126,7 @@ export default function Imprint() {
             
             <h3>Security Measures</h3>
             <p>We implement appropriate technical and organizational security measures according to legal requirements, considering the state of technology, implementation costs, and the nature, scope, context, and purposes of the processing, as well as the varying probabilities and severity of the risk to the rights and freedoms of individuals.</p>
-            <p><strong>SSL Encryption (https):</strong> To protect your data transmitted via our Online Offering, we use SSL encryption, recognizable by the "https://" prefix in your browser's address bar.</p>
+            <p><strong>SSL Encryption (https):</strong> To protect your data transmitted via our Online Offering, we use SSL encryption, recognizable by the &quot;https://&quot; prefix in your browser&apos;s address bar.</p>
             
             <h3>Data Transfer</h3>
             <p>In the context of processing personal data, we may transfer data to other entities, companies, independent organizational units, or individuals or otherwise disclose it to them. Recipients may include IT service providers or providers of services and content integrated into our website. In such cases, we comply with the legal requirements and establish contracts to protect your data.</p>
