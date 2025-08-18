@@ -14,11 +14,12 @@
   box-sizing: border-box;
   position: relative;
   width: 1920px;
-  height: 1280px;
+  height: 1920px;
   background: #070F12;
-  border: 1px solid #FFFFFF;
+  border: 0px solid #FFFFFF;
   transform-origin: center center;
   background: transparent;
+  
   // Responsive scaling für verschiedene Bildschirmgrößen
   @media (max-width: 1960px) {
     transform: scale(calc((100vw - 40px) / 1920));
@@ -46,7 +47,7 @@
   box-sizing: border-box;
   position: absolute;
   width: 1440px;
-  height: 1100px;
+  height: 1700px;
   left: 240px;
   top: 90px;
   background: #363636;
@@ -137,6 +138,7 @@
   left: 1525px;
   top: 42px;
   background-image: url('/images/youtube-square-red-logo-15975.png');
+  opacity: 0.7;
 }
 
 .twitter {
@@ -144,6 +146,7 @@
   left: 1570px;
   top: 42px;
   background-image: url('/images/twitter-x-logo-blue-square-round-20857.png');
+  opacity: 0.7;
 }
 
 .instagram {
@@ -151,6 +154,7 @@
   left: 1614px;
   top: 42px;
   background-image: url('/images/instagram-square-logo-15976.png');
+  opacity: 0.7;
 }
 
 .logoHalo {
@@ -183,6 +187,7 @@
   background-size: cover;
   background-position: center;
   z-index: 10;
+  opacity: 0.7;
 }
 
 .tenThousandFroggers {
@@ -195,6 +200,7 @@
   background-size: cover;
   background-position: center;
   z-index: 10;
+  opacity: 0.7;
 }
 
 .froggersText {
@@ -211,6 +217,7 @@
   color: #A40000;
   transform: rotate(4deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .aboutBalloon {
@@ -223,6 +230,7 @@
   background-size: cover;
   background-position: center;
   z-index: 10;
+  opacity: 0.7;
 }
 
 .collectionText {
@@ -254,6 +262,7 @@
   border-radius: 15px;
   transform: rotate(-2deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .aboutTitle {
@@ -270,6 +279,7 @@
   color: #EDD900;
   transform: rotate(-2deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .ballonYellowFrogger {
@@ -285,6 +295,7 @@
   border-radius: 15px;
   transform: rotate(3deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .ourMissionTitle {
@@ -302,6 +313,7 @@
   color: #F99900;
   transform: rotate(3deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .ourMissionText01 {
@@ -319,6 +331,7 @@
   color: #CF6100;
   transform: rotate(3deg);
   z-index: 10;
+  opacity: 0.7;
 }
 
 .ourMissionText02 {
@@ -336,5 +349,217 @@
   color: #9C9C9C;
   transform: rotate(3deg);
   z-index: 10;
+  opacity: 0.7;
+}
+
+.originsText01 {
+  position: absolute;
+  width: 255px;
+  height: 286px;
+  left: 890px;
+  top: 915px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: right;
+  color: #3F66FE;
+  transform: rotate(0.43deg);
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.ballonWhiteHeart {
+  position: absolute;
+  width: 391.47px;
+  height: 391.47px;
+  left: 772px;
+  top: 816px;
+  background: url('/images/Ballon_White_Heart.png');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #042E88;
+  border-radius: 15px;
+  transform: rotate(0.43deg);
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.originsTitle {
+  position: absolute;
+  width: 204px;
+  height: 80px;
+  left: 979px;
+  top: 814px;
+  font-family: 'Annie Use Your Telescope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 92px;
+  color: #0059FF;
+  transform: rotate(0.43deg);
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.frogtopiaText02 {
+  position: absolute;
+  width: 347px;
+  height: 97px;
+  left: 304px;
+  top: 1409px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #9182E4;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.frogtopiaText01 {
+  position: absolute;
+  width: 337px;
+  height: 735px;
+  left: 304px;
+  top: 953px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #9182E4;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.rectangle02 {
+  position: absolute;
+  width: 375px;
+  height: 846px;
+  left: 285px;
+  top: 851px;
+  background: #0059FF;
+  opacity: 0.2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  z-index: 5;
+  opacity: 0.05;
+}
+
+.frogtopiaTitle {
+  position: absolute;
+  width: 337px;
+  height: 117px;
+  left: 304px;
+  top: 865px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 33px;
+  line-height: 39px;
+  color: #B6A9FF;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.rectangle01 {
+  position: absolute;
+  width: 375px;
+  height: 632px;
+  left: 1258px;
+  top: 941px;
+  background: #0059FF;
+  opacity: 0.2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  z-index: 5;
+  opacity: 0.05;
+}
+
+.futureText01 {
+  position: absolute;
+  width: 332px;
+  height: 224px;
+  left: 1280px;
+  top: 1319px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: right;
+  color: #8DA4FF;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.futureTitle {
+  position: absolute;
+  width: 337px;
+  height: 46px;
+  left: 1347px;
+  top: 1265px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 33px;
+  line-height: 39px;
+  color: #8DA4FF;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.visionText01 {
+  position: absolute;
+  width: 302px;
+  height: 230px;
+  left: 1304px;
+  top: 1009px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: right;
+  color: #9182E4;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.visionTitle {
+  position: absolute;
+  width: 211px;
+  height: 41px;
+  left: 1485px;
+  top: 953px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 33px;
+  line-height: 39px;
+  color: #B6A9FF;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.frog_01 {
+  position: absolute;
+  width: 371.55px;
+  height: 495.4px;
+  left: 751px;
+  top: 1138px;
+  background: url('/images/frog_01.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+/* 10% Opazität */
+  opacity: 0.2;
+
+  /* Rotation -128.77 Grad */
+  transform: rotate(-128.77deg);
 
 }
+
