@@ -18,7 +18,7 @@
   background: #070F12;
   border: 1px solid #FFFFFF;
   transform-origin: center center;
-  
+  background: transparent;
   // Responsive scaling für verschiedene Bildschirmgrößen
   @media (max-width: 1960px) {
     transform: scale(calc((100vw - 40px) / 1920));
@@ -252,4 +252,5 @@
       margin: 3px 0;
     }
   }
+
 }
