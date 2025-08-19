@@ -3,52 +3,33 @@
   width: 100%;
   min-height: calc(100vh - 200px);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .desktop {
-  box-sizing: border-box;
   position: relative;
-  width: 1920px;
-  height: 1280px;
-  background: transparent; /* Transparent background instead of #070F12 */
-  /* border: 1px solid #FFFFFF; - Hidden for production */
-  transform-origin: center center;
-  
-  // Responsive scaling für verschiedene Bildschirmgrößen
-  @media (max-width: 1960px) {
-    transform: scale(calc((100vw - 40px) / 1920));
-  }
-  
-  @media (max-width: 1440px) {
-    transform: scale(calc((100vw - 40px) / 1920));
-  }
-  
-  @media (max-width: 1024px) {
-    transform: scale(calc((100vw - 40px) / 1920));
-  }
-  
-  @media (max-width: 768px) {
-    transform: scale(calc((100vw - 40px) / 1920));
-  }
-  
-  // Maximale Skalierung für große Bildschirme
-  @media (min-width: 1961px) {
-    transform: scale(1);
-  }
+  width: 100%;
+  max-width: 1920px;
+  min-height: calc(100vh - 240px);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  margin: 0 auto;
 }
 
 .bgContainer {
-  box-sizing: border-box;
   position: absolute;
-  width: 1440px;
-  height: 1100px;
-  left: 240px;
-  top: 90px;
+  top: 100px; /* 100px nach unten */
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1440px, 95vw);
+  height: calc(100% - 120px);
+  min-height: 600px;
   background: #363636;
   opacity: 0.19;
   border: 2px solid #606060;
@@ -56,138 +37,351 @@
   z-index: 1;
 }
 
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 10;
+  gap: 20px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .froggerBubble {
-  box-sizing: border-box;
-  position: absolute;
-  width: 170.41px;
-  height: 170.41px;
-  left: 270px;
-  top: 54px;
+  width: 170px;
+  height: 170px;
   background: url('/images/Frogger_Special_Edition_01.png');
   background-size: cover;
   background-position: center;
-  mix-blend-mode: normal;
   border: 2px solid #A2A2A2;
   border-radius: 200px 200px 0px 200px;
-  z-index: 10;
+  flex-shrink: 0;
+  margin-top: -30px; /* Von -35px auf -30px (weitere 5px runter) */
+}
+
+.centerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  max-width: 600px;
+  gap: 5px;
+  margin-top: 65px; /* Von 70px auf 65px (5px nach oben) */
 }
 
 .textRibbit {
-  position: absolute;
-  width: 330.67px;
-  height: 23.75px;
-  left: 450px;
-  top: 160px;
-  font-family: 'Outfit';
-  font-style: normal;
+  font-family: 'Outfit', sans-serif;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 18px; /* Von 25px auf 18px */
+  line-height: 1.3;
   color: #D80000;
-  z-index: 10;
-}
-
-.textFroggers {
-  position: absolute;
-  width: 489.33px;
-  height: 23.75px;
-  left: 450px;
-  top: 180px;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  color: #86B700;
-  z-index: 10;
-}
-
-.textMetaverse {
-  position: absolute;
-  width: 408px;
-  height: 47.5px;
-  left: 450px;
-  top: 200px;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  color: #0054EF;
-  z-index: 10;
-}
-
-.socialIcon {
-  position: absolute;
-  width: 35.78px;
-  height: 35.78px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.2s ease;
+  white-space: nowrap;
+  /* margin-top entfernt - Flexbox gap regelt Abstände */
   
-  &:hover {
-    transform: scale(1.1);
+  /* Sehr große Screens */
+  @media (min-width: 1200px) {
+    transform: translate(-150px, 0px); /* Von -200px auf -150px (50px nach rechts) */
+  }
+  
+  /* Desktop */
+  @media (min-width: 900px) and (max-width: 1199px) {
+    transform: translate(130px, 0px); /* Von 80px auf 130px (50px nach rechts) */
+  }
+  
+  /* Tablet */
+  @media (min-width: 600px) and (max-width: 899px) {
+    transform: translate(230px, 0px); /* Von 180px auf 230px (50px nach rechts) */
+  }
+  
+  /* Mobile */
+  @media (max-width: 599px) {
+    transform: translate(50px, 0px); /* Von 0px auf 50px (50px nach rechts) */
   }
 }
 
+.textFroggers {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 18px; /* Von 25px auf 18px */
+  line-height: 1.3;
+  color: #86B700;
+  white-space: nowrap;
+  /* margin-top entfernt - Flexbox gap regelt Abstände */
+  
+  /* Sehr große Screens */
+  @media (min-width: 1200px) {
+    transform: translate(-195px, 0px); /* Von -190px auf -195px (5px weniger rechts) */
+  }
+  
+  /* Desktop */
+  @media (min-width: 900px) and (max-width: 1199px) {
+    transform: translate(85px, 0px); /* Von 90px auf 85px (5px weniger rechts) */
+  }
+  
+  /* Tablet */
+  @media (min-width: 600px) and (max-width: 899px) {
+    transform: translate(185px, 0px); /* Von 190px auf 185px (5px weniger rechts) */
+  }
+  
+  /* Mobile */
+  @media (max-width: 599px) {
+    transform: translate(5px, 0px); /* Von 10px auf 5px (5px weniger rechts) */
+  }
+}
+
+.textMetaverse {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 18px; /* Von 25px auf 18px */
+  line-height: 1.3;
+  color: #0054EF;
+  white-space: nowrap;
+  /* margin-top entfernt - Flexbox gap regelt Abstände */
+  
+  /* Sehr große Screens */
+  @media (min-width: 1200px) {
+    transform: translate(-200px, 0px); /* -300px + 100px = -200px */
+  }
+  
+  /* Desktop */
+  @media (min-width: 900px) and (max-width: 1199px) {
+    transform: translate(80px, 0px); /* -20px + 100px = 80px */
+  }
+  
+  /* Tablet */
+  @media (min-width: 600px) and (max-width: 899px) {
+    transform: translate(180px, 0px); /* 80px + 100px = 180px */
+  }
+  
+  /* Mobile */
+  @media (max-width: 599px) {
+    transform: translate(0px, 0px); /* Auf Mobile zentriert, keine Verschiebung */
+  }
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: -3px; /* Von -5px auf -3px (weitere 2px runter) */
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
 .youtube {
-  @extend .socialIcon;
-  left: 1525px;
-  top: 42px;
   background-image: url('/images/youtube-square-red-logo-15975.png');
 }
 
 .twitter {
-  @extend .socialIcon;
-  left: 1570px;
-  top: 42px;
   background-image: url('/images/twitter-x-logo-blue-square-round-20857.png');
 }
 
 .instagram {
-  @extend .socialIcon;
-  left: 1614px;
-  top: 42px;
   background-image: url('/images/instagram-square-logo-15976.png');
 }
 
 .logoHalo {
-  box-sizing: border-box;
-  position: absolute;
   width: 75px;
   height: 75px;
-  left: 1577px;
-  top: 120px;
   border: 1px solid #767676;
-  border-radius: 90px;
-  z-index: 10;
+  border-radius: 50%;
   overflow: hidden;
+  flex-shrink: 0;
+  margin-top: 18px;
+  margin-right: -42px;
+  
+  /* Ab 768px und kleiner verstecken */
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .logoVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 90px;
+  border-radius: 50%;
+}
+
+.videoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  flex: 1;
+  min-height: 400px;
+  position: relative;
+  z-index: 5;
 }
 
 .stage {
-  position: absolute;
-  width: 1440px;
-  height: 810px;
-  left: 240px;
-  top: 254px;
+  width: min(1440px, 95vw);
+  height: min(60vh, 810px);
+  min-height: 300px;
   background: #000000;
-  border-radius: 0px 0px 20px 20px;
-  z-index: 5;
+  border-radius: 0; /* Alle abgerundeten Ecken entfernt */
   overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  top: 10px; /* Von 20px auf 10px (weitere 10px nach oben) */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .stageVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0; /* Auch beim Video alle Ecken entfernt */
+}
+
+@media (min-width: 1441px) {
+  .headerSection {
+    padding: 30px 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bgContainer {
+    width: 90vw;
+  }
+  
+  .stage {
+    width: 90vw;
+  }
+  
+  .headerSection {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bgContainer {
+    width: 95vw;
+    height: calc(100% - 10px);
+    top: 0;
+  }
+
+  .headerSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .centerSection {
+    gap: 5px;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .textRibbit,
+  .textFroggers,
+  .textMetaverse {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .rightSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .socialIcons {
+    gap: 15px;
+  }
+
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logoHalo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .froggerBubble {
+    width: 120px;
+    height: 120px;
+  }
+
+  .videoSection {
+    padding: 0;
+    min-height: 300px;
+  }
+
+  .stage {
+    width: 95vw;
+    height: min(50vh, 400px);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .stageVideo {
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSection {
+    padding: 15px;
+  }
+  
+  .rightSection {
+    gap: 10px;
+  }
+  
+  .socialIcons {
+    gap: 12px;
+  }
+
+  .froggerBubble {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stage {
+    width: 95vw;
+    height: min(40vh, 300px);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .stageVideo {
+    border-radius: 0 0 10px 10px;
+  }
 }

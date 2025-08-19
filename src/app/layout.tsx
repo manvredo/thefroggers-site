@@ -24,21 +24,24 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Flex
-      suppressHydrationWarning
-      as="html"
+    <html 
       lang="en"
-      fillWidth
+      suppressHydrationWarning
       className={classNames(
         fonts.heading.variable,
         fonts.body.variable,
         fonts.label.variable,
         fonts.code.variable,
-        fonts.outfit.variable,    // NEUE FONTS HINZUGEFÜGT
-        fonts.londrina.variable,  // NEUE FONTS HINZUGEFÜGT
+        fonts.outfit.variable,
+        fonts.londrina.variable,
       )}
     >
       <head>
+        {/* Google Fonts - Open Sans für Navigation */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{
@@ -46,7 +49,9 @@ export default async function RootLayout({
               (function() {
                 try {
                   const root = document.documentElement;
-                  const defaultTheme = 'system';
+                  
+                  // FEST AUF DARK THEME SETZEN
+                  root.setAttribute('data-theme', 'dark');
                   
                   // Set defaults from config
                   const config = ${JSON.stringify({
@@ -67,27 +72,6 @@ export default async function RootLayout({
                     root.setAttribute('data-' + key, value);
                   });
                   
-                  // Resolve theme
-                  const resolveTheme = (themeValue) => {
-                    if (!themeValue || themeValue === 'system') {
-                      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                    }
-                    return themeValue;
-                  };
-                  
-                  // Apply saved theme
-                  const savedTheme = localStorage.getItem('data-theme');
-                  const resolvedTheme = resolveTheme(savedTheme);
-                  root.setAttribute('data-theme', resolvedTheme);
-                  
-                  // Apply any saved style overrides
-                  const styleKeys = Object.keys(config);
-                  styleKeys.forEach(key => {
-                    const value = localStorage.getItem('data-' + key);
-                    if (value) {
-                      root.setAttribute('data-' + key, value);
-                    }
-                  });
                 } catch (e) {
                   console.error('Failed to initialize theme:', e);
                   document.documentElement.setAttribute('data-theme', 'dark');
@@ -98,66 +82,68 @@ export default async function RootLayout({
         />
       </head>
       <Providers>
-        <Column as="body" background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0">
-          <Background
-            position="fixed"
-            mask={{
-              x: effects.mask.x,
-              y: effects.mask.y,
-              radius: effects.mask.radius,
-              cursor: effects.mask.cursor,
-            }}
-            gradient={{
-              display: effects.gradient.display,
-              opacity: effects.gradient.opacity as opacity,
-              x: effects.gradient.x,
-              y: effects.gradient.y,
-              width: effects.gradient.width,
-              height: effects.gradient.height,
-              tilt: effects.gradient.tilt,
-              colorStart: effects.gradient.colorStart,
-              colorEnd: effects.gradient.colorEnd,
-            }}
-            dots={{
-              display: effects.dots.display,
-              opacity: effects.dots.opacity as opacity,
-              size: effects.dots.size as SpacingToken,
-              color: effects.dots.color,
-            }}
-            grid={{
-              display: effects.grid.display,
-              opacity: effects.grid.opacity as opacity,
-              color: effects.grid.color,
-              width: effects.grid.width,
-              height: effects.grid.height,
-            }}
-            lines={{
-              display: effects.lines.display,
-              opacity: effects.lines.opacity as opacity,
-              size: effects.lines.size as SpacingToken,
-              thickness: effects.lines.thickness,
-              angle: effects.lines.angle,
-              color: effects.lines.color,
-            }}
-          />
-          <Flex fillWidth minHeight="16" style={{ display: 'none' }} className="hide-on-small"/>
-            <Header />
-            <Flex
-              zIndex={0}
-              fillWidth
-              padding="l"
-              flex={1}
-              style={{ justifyContent: 'center' }}
-            >
-              <Flex fillWidth minHeight="0" style={{ justifyContent: 'center' }}>
-                <RouteGuard>
-                  {children}
-                </RouteGuard>
+        <body style={{ margin: 0, padding: 0 }}>
+          <Column background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0">
+            <Background
+              position="fixed"
+              mask={{
+                x: effects.mask.x,
+                y: effects.mask.y,
+                radius: effects.mask.radius,
+                cursor: effects.mask.cursor,
+              }}
+              gradient={{
+                display: effects.gradient.display,
+                opacity: effects.gradient.opacity as opacity,
+                x: effects.gradient.x,
+                y: effects.gradient.y,
+                width: effects.gradient.width,
+                height: effects.gradient.height,
+                tilt: effects.gradient.tilt,
+                colorStart: effects.gradient.colorStart,
+                colorEnd: effects.gradient.colorEnd,
+              }}
+              dots={{
+                display: effects.dots.display,
+                opacity: effects.dots.opacity as opacity,
+                size: effects.dots.size as SpacingToken,
+                color: effects.dots.color,
+              }}
+              grid={{
+                display: effects.grid.display,
+                opacity: effects.grid.opacity as opacity,
+                color: effects.grid.color,
+                width: effects.grid.width,
+                height: effects.grid.height,
+              }}
+              lines={{
+                display: effects.lines.display,
+                opacity: effects.lines.opacity as opacity,
+                size: effects.lines.size as SpacingToken,
+                thickness: effects.lines.thickness,
+                angle: effects.lines.angle,
+                color: effects.lines.color,
+              }}
+            />
+            <Flex fillWidth minHeight="16" style={{ display: 'none' }} className="hide-on-small"/>
+              <Header />
+              <Flex
+                zIndex={0}
+                fillWidth
+                padding="l"
+                flex={1}
+                style={{ justifyContent: 'center' }}
+              >
+                <Flex fillWidth minHeight="0" style={{ justifyContent: 'center' }}>
+                  <RouteGuard>
+                    {children}
+                  </RouteGuard>
+                </Flex>
               </Flex>
-            </Flex>
-            <Footer/>
-          </Column>
-        </Providers>
-      </Flex>
+              <Footer/>
+            </Column>
+        </body>
+      </Providers>
+    </html>
   );
 }
