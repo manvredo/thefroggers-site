@@ -6,12 +6,11 @@ import { useEffect, useState } from "react";
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 
 import { routes, display, person, about, blog, work, theFroggers, gallery } from "@/resources";
-import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
 type TimeDisplayProps = {
   timeZone: string;
-  locale?: string; // Optionally allow locale, defaulting to 'en-GB'
+  locale?: string;
 };
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
@@ -86,19 +85,19 @@ export const Header = () => {
             style={{ justifyContent: 'center' }}
             zIndex={1}
           >
-            <Flex gap="4" style={{ alignItems: 'center' }} textVariant="body-default-s" suppressHydrationWarning>
+            <Flex gap="4" style={{ alignItems: 'center', fontFamily: "'Open Sans', sans-serif !important" }} textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
-{routes["/about"] && (
-  <ToggleButton
-    prefixIcon="person"
-    href="/about"
-    label={about.label}
-    selected={pathname === "/about"}
-  />
-)}
+              {routes["/about"] && (
+                <ToggleButton
+                  prefixIcon="person"
+                  href="/about"
+                  label={about.label}
+                  selected={pathname === "/about"}
+                />
+              )}
               {routes["/mint"] && (
                 <ToggleButton
                   prefixIcon="grid"
@@ -131,12 +130,33 @@ export const Header = () => {
                   selected={pathname.startsWith("/nfts")}
                 />
               )}
-              {display.themeSwitcher && (
-                <>
-                  <Line background="neutral-alpha-medium" vert maxHeight="24" />
-                  <ThemeToggle />
-                </>
-              )}
+              {/* OpenSea Link statt Theme Toggle */}
+              <Line background="neutral-alpha-medium" vert maxHeight="24" />
+              <a 
+                href="https://opensea.io/collection/thefroggers" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  display: 'flex', 
+                  alignItems: 'center',
+                  padding: '8px',
+                  borderRadius: '6px',
+                  transition: 'background-color 0.2s ease',
+                  textDecoration: 'none'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+              >
+                <img 
+                  src="/images/opensea_01.png" 
+                  alt="OpenSea" 
+                  style={{
+                    width: '28px',
+                    height: '28px',
+                    objectFit: 'contain'
+                  }}
+                />
+              </a>
             </Flex>
           </Flex>
         </Flex>
