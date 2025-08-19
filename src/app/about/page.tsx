@@ -126,7 +126,7 @@ export default function About() {
 
           {/* Frogtopia_Text_02 */}
           <div className={styles.frogtopiaText02}>
-            In Frogtopia, the Froggers are never still. They dance in neon discos, paint and invent in buzzing studios, and trade, argue, or celebrate in the busy streets of the Metropolis. Every Frogger adds their own spark to the chaos and charm of this digital society, making it as unpredictable as it is alive. And the best part? Somewhere in this world, there's a Frogger that mirrors you.
+            In Frogtopia, the Froggers are never still. They dance in neon discos, paint and invent in buzzing studios, and trade, argue, or celebrate in the busy streets of the Metropolis. Every Frogger adds their own spark to the chaos and charm of this digital society, making it as unpredictable as it is alive. And the best part? Somewhere in this world, there&apos;s a Frogger that mirrors you.
           </div>
 
           {/* NEUES LOGO */}
@@ -149,7 +149,7 @@ export default function About() {
 
           {/* Future Text 01 */}
           <div className={styles.futureText01}>
-            We are committed to continuously expanding and deepening the world of Frogtopia. Planned future developments include animated content, interactive games, comics, and merchandise, enhancing the Froggers' experience and creating new opportunities for our community.
+            We are committed to continuously expanding and deepening the world of Frogtopia. Planned future developments include animated content, interactive games, comics, and merchandise, enhancing the Froggers&apos; experience and creating new opportunities for our community.
           </div>
 						
           {/* GET IN TOUCH BUTTON SECTION */}
