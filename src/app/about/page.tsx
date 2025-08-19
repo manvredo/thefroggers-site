@@ -122,12 +122,11 @@ export default function About() {
           {/* Frogtopia_Text_01 */}
           <div className={styles.frogtopiaText01}>
             Frogtopia is a vibrant 3D world within the metaverse, the beating heart of the Frogger community. Here, all Froggers live, leap, and express themselves in countless unique ways. Each one is truly one-of-a-kind: individually dressed in styles that range from sharp business suits to wild party gear, magical robes, or laid-back streetwear, and rich in character, with personalities as diverse as the world they inhabit. Some are dreamers, floating through life with roller skates and glowing butterflies, others are tough bosses draped in golden chains, while wanderers roam with harmonicas and stories to tell.
-]
           </div>
 
           {/* Frogtopia_Text_02 */}
           <div className={styles.frogtopiaText02}>
-            In Frogtopia, the Froggers are never still. They dance in neon discos, paint and invent in buzzing studios, and trade, argue, or celebrate in the busy streets of the Metropolis. Every Frogger adds their own spark to the chaos and charm of this digital society, making it as unpredictable as it is alive. And the best part? Somewhere in this world, there’s a Frogger that mirrors you.
+            In Frogtopia, the Froggers are never still. They dance in neon discos, paint and invent in buzzing studios, and trade, argue, or celebrate in the busy streets of the Metropolis. Every Frogger adds their own spark to the chaos and charm of this digital society, making it as unpredictable as it is alive. And the best part? Somewhere in this world, there's a Frogger that mirrors you.
           </div>
 
           {/* NEUES LOGO */}
@@ -150,7 +149,16 @@ export default function About() {
 
           {/* Future Text 01 */}
           <div className={styles.futureText01}>
-            We are committed to continuously expanding and deepening the world of Frogtopia. Planned future developments include animated content, interactive games, comics, and merchandise, enhancing the Froggers’ experience and creating new opportunities for our community.
+            We are committed to continuously expanding and deepening the world of Frogtopia. Planned future developments include animated content, interactive games, comics, and merchandise, enhancing the Froggers' experience and creating new opportunities for our community.
+          </div>
+						
+          {/* GET IN TOUCH BUTTON SECTION */}
+          {/* Rectangle_01 - Button Background */}
+          <div className={styles.buttonBackground}></div>
+          
+          {/* Get in touch Text */}
+          <div className={styles.buttonText}>
+            Get in touch
           </div>
         </div>
       </div>
